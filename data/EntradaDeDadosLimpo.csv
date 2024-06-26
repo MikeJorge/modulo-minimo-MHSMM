@@ -1,0 +1,367 @@
+0,Número (compra) de Vacas (37 a 48 meses)
+130,Vaca Acompanhada
+1755,Preco da Vaca Acompanhada
+0,UA/Cab - Valor Inicial - Mortalidade Nascido
+2,Prêmio (carcaça) da novilha gorda (18 a 20 meses)
+0,Prêmio (carcaça) da novilha gorda (21 a 28 meses)
+0,Prêmio (carcaça) da novilha gorda (29 a 36 meses)
+7,Prêmio (carcaça) do boi gordo (18 a 20 meses - dente de leite - DL)
+5,Prêmio (carcaça) do boi gordo (21 a 28 meses - até dois dentes permanentes)
+2,Prêmio (carcaça) do boi gordo (29 a 36 meses - até quatro dentes permanentes)
+0,Prêmio (carcaça) do boi gordo (37 a 48 meses - adulto)
+0.52,Rendimento de carcaça (kg/kg) - Peso inicial da novilha gorda (18 a 20 meses)
+0.52,Rendimento de carcaça (kg/kg) - Peso inicial da novilha gorda (21 a 28 meses)
+0.5,Rendimento de carcaça (kg/kg) - Peso inicial da novilha gorda (29 a 36 meses)
+0.5,Rendimento de carcaça (kg/kg) - Peso inicial da vaca gorda - kg - Vaca (37 a 48 meses)
+0.54,Rendimento de carcaça (kg/kg) - Peso inicial do boi gordo (18 a 20 meses - dente de leite - DL)
+0.5,Rendimento de carcaça (kg/kg) - Peso inicial Garrote (18 meses)
+0.5,Rendimento de carcaça (kg/kg) - Peso inicial do boi magro (12 a 13 arrobas)
+0.54,Rendimento de carcaça (kg/kg) - Peso inicial do boi gordo (21 a 28 meses - até dois dentes permanentes)
+0.53,Rendimento de carcaça (kg/kg) - Peso inicial do boi gordo (29 a 36 meses - até quatro dentes permanentes)
+0.53,Rendimento de carcaça (kg/kg) - Peso inicial do boi gordo (37 a 48 meses - adulto)
+0.50,Rendimento de carcaça (kg/kg) - Peso inicial do gordo toruno (acima de 60 meses)
+11.16,Preço R$ kgf peso vivo Desmama F1
+11.3,Preço R$ kgf peso vivo Bezerra F2
+266,Preço R$ arroba Novilha F3
+273.9,Preço R$ arroba Novilha F4
+273.9,Preço R$ arroba Novilha F5
+246.5,Preço R$ arroba Vaca F6
+13.63,Preço R$ kgf peso vivo Desmama M1
+12.22,Preço R$ kgf peso vivo Bezerro M2
+266,Preço R$ arroba Boi gordo M3
+321.1,Preço R$ arroba Garrote M3g
+301.5,Preço R$ arroba Boi magro M3bm
+266,Preço R$ arroba Boi gordo M4
+266,Preço R$ arroba Boi gordo M5
+266,Preço R$ arroba Boi gordo M6
+215.1,Preço R$ arroba Boi gordo M6bgt
+160,Peso inicial da bezerra - Desmama (7 a 8 meses)
+180,Peso inicial da bezerra - (12 meses)
+290,Peso inicial da novilha gorda (18 a 20 meses)
+330,Peso inicial da novilha gorda (21 a 28 meses)
+400,Peso inicial da novilha gorda (29 a 36 meses)
+450,Peso inicial da vaca gorda - kg - Vaca (37 a 48 meses)
+250,Peso inicial da bezerro - Desmama (7 a 8 meses)
+225,Peso inicial da bezerro - (12 meses)
+380,Peso inicial do boi gordo (18 a 20 meses - dente de leite - DL)
+285,Peso inicial do Garrote (18 meses)
+370,Peso inicial do boi magro (12 a 13 arrobas)
+400,Peso inicial do boi gordo (21 a 28 meses - até dois dentes permanentes)
+440,Peso inicial do boi gordo (29 a 36 meses - até quatro dentes permanentes)
+600,Peso inicial do boi gordo (37 a 48 meses - adulto)
+750,Peso inicial do boi gordo toruno (acima de 60 meses)
+800,Peso inicial do touro
+200,Peso comercial (aquisição/reposição) - bezerro - Desmama
+290,Peso comercial (aquisição/reposição) - bezerro
+175,Peso comercial (aquisição/reposição) - bezerra - Desmama
+0,Peso comercial (aquisição/reposição) - bezerra
+235,Peso comercial (aquisição/reposição) - novilha gorda (18 a 20 meses)
+260,Peso comercial (aquisição/reposição) - novilha gorda (21 a 28 meses)
+290,Peso comercial (aquisição/reposição) - novilha gorda (29 a 36 meses)
+0,Peso comercial (aquisição/reposição) - Garrote
+380,Peso comercial (aquisição/reposição) - touro
+357,Peso comercial (aquisição/reposição) - Vaca (37 a 48 meses)
+3.91,Preço R$ kgf peso vivo Novilha F3
+4,Preço R$ kgf peso vivo Novilha F4
+4.2,Preço R$ kgf peso vivo Novilha F5
+0,Preço R$ kgf peso vivo Garrote M3g
+13.15,Preço R$ kgf peso vivo Touro M6t
+3.9,Preço R$ kgf peso vivo Vaca F6
+0,Aquisição - bezerra - Desmama (7 a 8 meses)
+0,Aquisição - bezerra - (12 meses)
+0,Aquisição - novilha gorda (18 a 20 meses)
+0,Aquisição - novilha gorda (21 a 28 meses)
+0,Aquisição - novilha gorda (29 a 36 meses)
+0,Aquisição - Peso inicial da bezerro - Desmama (7 a 8 meses)
+0,Aquisição - Peso inicial da bezerro - (12 meses)
+0,Aquisição - Peso inicial do boi gordo (18 a 20 meses - dente de leite - DL)
+0,Aquisição - Peso inicial do Garrote (18 meses)
+0,Aquisição - Peso inicial do boi magro (12 a 13 arrobas)
+0,Aquisição - boi gordo (21 a 28 meses - até dois dentes permanentes)
+0,Aquisição - boi gordo (29 a 36 meses - até quatro dentes permanentes)
+0,Aquisição - boi gordo (37 a 48 meses - adulto)
+0,Aquisição - boi gordo toruno (acima de 60 meses)
+20,Aquisição - touro
+0.012,Mortalidade até a desmama
+0.01,Mortalidade até 12 meses
+0.0065,Mortalidade até 18-20 meses
+0.01,Mortalidade até  21-28 meses
+0.005,Mortalidade até 29-36 meses
+0.005,Mortalidade até 37-48 meses
+0.4,Pressão de seleção - Bezerra desmama (7 a 8 meses)
+0.2,Pressão de seleção - Bezerra (12 meses)
+0.4,Pressão de seleção - novilha gorda (18 a 20 meses)
+0.9,Pressão de seleção - novilha gorda (21 a 28 meses)
+0.8,Pressão de seleção - novilha gorda (29 a 36 meses)
+0.5,Pressão de seleção - vaca gorda - kg - Vaca (37 a 48 meses)
+0.4,Pressão de seleção - Bezerro desmama (7 a 8 meses)
+0.2,Pressão de seleção - Bezerro (12 meses)
+0.4,Pressão de seleção - Boi gordo (18 a 20 meses) - DL
+0.2,Pressão de seleção - Garrote (18 meses)
+0.2,Pressão de seleção - Boi magro (12 a 13 arrobas)
+0.6,Pressão de seleção - Boi gordo (21 a 28 meses) até 2 dentes permanentes
+0.5,Pressão de seleção - Boi gordo (29 a 36 meses) até 4 dentes permanentes
+1,Pressão de seleção - Boi gordo (37 a 48 meses)
+1,Pressão de seleção - Boi gordo toruno (acima de 60 meses)
+0.47,UA/Cab - bezerra - Desmama (7 a 8 meses)
+0.56,UA/Cab - bezerra - (12 meses)
+0.64,UA/Cab - novilha gorda (18 a 20 meses)
+0.73,UA/Cab - novilha gorda (21 a 28 meses)
+0.89,UA/Cab - novilha gorda (29 a 36 meses)
+1,UA/Cab - vaca gorda - kg - Vaca (37 a 48 meses)
+0.56,UA/Cab - Bezerro desmama (7 a 8 meses)
+0.64,UA/Cab - Bezerro (12 meses)
+0.84,UA/Cab - Boi gordo (18 a 20 meses) - DL
+0.74,UA/Cab - Garrote (18 meses)
+0.82,UA/Cab - Boi magro (12 a 13 arrobas)
+0.89,UA/Cab - Boi gordo (21 a 28 meses) até 2 dentes permanentes 
+0.98,UA/Cab - Boi gordo (29 a 36 meses) até 4 dentes permanentes 
+1.33,UA/Cab - Boi gordo (37 a 48 meses)
+1.67,UA/Cab - Boi gordo toruno (acima de 60 meses)
+1.78,UA/Cab - touro
+25,Relação entre touro e vaca
+0.2,Reposição de vacas
+0.2,Reposição de touros
+0.90,Taxa de natalidade Ani
+0.82,Taxa de natalidade Mni
+0.70,Taxa de natalidade Bni
+0.015,Taxa de Funrural
+20000,Manutenção e instalações de benfeitorias (RS/ano)
+20400,Manutenção de máquinas e equipamentos (RS/ano)
+0.10,Taxa de arrendamento Ani
+0.10,Taxa de arrendamento Mni
+0.10,Taxa de arrendamento Bni
+175,Peso de venda da bezerra - Desmama (7 a 8 meses)
+195,Peso de venda da bezerra - (12 meses)
+450,Peso de venda da novilha gorda (18 a 20 meses)
+460,Peso de venda da novilha gorda (21 a 28 meses)
+460,Peso de venda da novilha gorda (29 a 36 meses)
+440,Peso de venda da vaca gorda - kg - Vaca (37 a 48 meses)
+195,Peso de venda da bezerro - Desmama (7 a 8 meses)
+240,Peso de venda da bezerro - (12 meses)
+480,Peso de venda do boi gordo (18 a 20 meses - dente de leite - DL)
+300,Peso de venda do Garrote (18 meses)
+380,Peso de venda do boi magro (12 a 13 arrobas)
+525,Peso de venda do boi gordo (21 a 28 meses - até dois dentes permanentes)
+570,Peso de venda do boi gordo (29 a 36 meses - até quatro dentes permanentes)
+570,Peso de venda do boi gordo (37 a 48 meses - adulto)
+780,Peso de venda do boi gordo toruno (acima de 60 meses)
+1,VacAftosa_F(6)
+1,VacAftosa_F(5)
+2,VacAftosa_F(4)
+2,VacAftosa_F(3)
+2,VacAftosa_F(2)
+2,VacAftosa_F(1)
+2,VacAftosa_M(1)
+2,VacAftosa_M(2)
+2,VacAftosa_Mg(3)
+2,VacAftosa_Mbm(3)
+2,VacAftosa_M(3)
+1,VacAftosa_M(4)
+1,VacAftosa_M(5)
+1,VacAftosa_M(6)
+1,VacAftosa_Mbgt(6)
+1,VacAftosa_Mt(6)
+1.3,PrecoVacAftosa
+1,VacCarb_F(6)
+1,VacCarb_F(5)
+2,VacCarb_F(4)
+2,VacCarb_F(3)
+2,VacCarb_F(2)
+2,VacCarb_F(1)
+2,VacCarb_M(1)
+2,VacCarb_M(2)
+2,VacCarb_Mg(3)
+2,VacCarb_Mbm(3)
+2,VacCarb_M(3)
+1,VacCarb_M(4)
+1,VacCarb_M(5)
+1,VacCarb_M(6)
+1,VacCarb_Mbgt(6)
+1,VacCarb_Mt(6)
+0.9,PrecoVacCarb
+0,VacBruc_F(6)
+0,VacBruc_F(5)
+0,VacBruc_F(4)
+0,VacBruc_F(3)
+0,VacBruc_F(2)
+1,VacBruc_F(1)
+0,VacBruc_M(1)
+0,VacBruc_M(2)
+0,VacBruc_Mg(3)
+0,VacBruc_Mbm(3)
+0,VacBruc_M(3)
+0,VacBruc_M(4)
+0,VacBruc_M(5)
+0,VacBruc_M(6)
+0,VacBruc_Mbgt(6)
+0,VacBruc_Mt(6)
+1.15,PrecoVacBruc
+1,Vermifugo_F(6)
+1,Vermifugo_F(5)
+2,Vermifugo_F(4)
+2,Vermifugo_F(3)
+2,Vermifugo_F(2)
+2,Vermifugo_F(1)
+2,Vermifugo_M(1)
+2,Vermifugo_M(2)
+2,Vermifugo_Mg(3)
+2,Vermifugo_Mbm(3)
+2,Vermifugo_M(3)
+1,Vermifugo_M(4)
+1,Vermifugo_M(5)
+1,Vermifugo_M(6)
+1,Vermifugo_Mbgt(6)
+1,Vermifugo_Mt(6)
+1.6,PrecoVermifugo
+1.6,Preço do sal mineral para reprodução
+1.6,Preço do sal mineral
+1.2,PrecoSupProt
+1.2,PrecoSupEnerg
+1.4,PrecoCreepFeeding
+1.8,PrecoTravaConsumo
+0.85,C7 - Coeficiente de consumo da dieta
+150,Dias de confinamento de creep feeding
+1.2,PrecoDieta1820
+1.2,PrecoDieta2128
+869,Outros medicamentos
+5.76,PrecoDiesel
+2,Uniforme_Qt_ano
+70,Uniforme_RS
+13561,Distribuidor de sementes/fertilizantes (Disco Duplo Montado)
+31352,Distribuidor de Calcário (Disco Duplo)
+25915,Grade aradora (20 a 28 discos - 26 a 28 pol)
+17051,Grade Niveladora (40 a 44 discos - 20 a 22 pol)
+6979,Carreta (4 a 6 toneladas - 4 rodas)
+11000,Matabroto Hidráulico EBT M (tamanho 2.75 m)
+32720,Conjunto hidráulico dianteiro (Concha para trator - 1500 a 1800 kg)
+168.33,Preço do m²
+1490,Trator 75 cv - Valor (R$/cv)
+800,Trator 180 cv - Valor (R$/cv)
+1490,Trator 65 cv - Valor (R$/cv)
+1210,Trator 140 cv - Valor (R$/cv)
+0.2,Valor de sucata - Trator 75 cv
+0.2,Valor de sucata - Trator 180 cv
+0.2,Valor de sucata - Trator 65 cv
+0.2,Valor de sucata - Trator 140 cv
+10,Vida útil - Trator 75 cv
+10,Vida útil - Trator 180 cv
+10,Vida útil - Trator 65 cv
+10,Vida útil - Trator 140 cv
+0.2,Valor_de_Sucata_INV(3)
+0.2,Valor_de_Sucata_INV(4)
+0.1,Valor_de_Sucata_INV(5)
+0.1,Valor_de_Sucata_INV(6)
+0.1,Valor_de_Sucata_INV(7) - Grade aradora (20 a 28 discos - 26 a 28 pol)
+0.1,Valor_de_Sucata_INV(8)
+0.2,Valor_de_Sucata_INV(9)
+0.1,Valor_de_Sucata_INV(10)
+0.1,Valor_de_Sucata_INV(11)
+0.1,Valor_de_Sucata_INV(12) - barracão (600 m²)
+10,Vida_Util_INV(3)
+10,Vida_Util_INV(4)
+10,Vida_Util_INV(5)
+10,Vida_Util_INV(6)
+10,Vida_Util_INV(7) - Grade aradora (20 a 28 discos - 26 a 28 pol)
+10,Vida_Util_INV(8)
+10,Vida_Util_INV(9)
+10,Vida_Util_INV(10)
+10,Vida_Util_INV(11)
+20,Vida_Util_INV(12)
+0.05,C1 - Consumo diário nutricional
+0.015,C2 - Consumo diário nutricional
+0.1,C3 - Consumo diário nutricional
+0.12,C4 - Consumo diário nutricional
+0.5,C5 - Consumo diário nutricional
+0.8,Tc6 - trava de consumo
+382.47,Valor da cesta básica
+0.0833,Décimo terceiro salário
+0.1111,Férias
+6.99,Valor da mão de obra (tratorista)
+5.35,Valor da mão de obra (campeiro)
+1,Número da mão de obra (tratorista)
+5,Número da mão de obra (campeiro)
+0.08,FGTS
+0.1333,Descanso semanal remunerado
+220,Horas Trabalhadas/mês
+0.027,Contribuição social
+380,Pecuária de ciclo curto - Peso na saída (kg) - novilha gorda (18 a 20 meses)
+1.45,Pecuária de ciclo curto - Ganho diário (kg) - novilha gorda (18 a 20 meses)
+0.01,Pecuária de ciclo curto - ração consumida do peso - novilha gorda (18 a 20 meses)
+460,Pecuária de ciclo curto - Peso na saída (kg) - Boi gordo (18 a 20 meses) - DL
+1.5,Pecuária de ciclo curto - Ganho diário (kg) - Boi gordo (18 a 20 meses) - DL
+0.01,Pecuária de ciclo curto - ração consumida do peso - Boi gordo (18 a 20 meses) - DL
+510,Pecuária de ciclo curto - Peso na saída (kg) - Boi gordo (21 a 28 meses)
+1.6,Pecuária de ciclo curto - Ganho diário (kg) - Boi gordo (21 a 28 meses)
+0.01,Pecuária de ciclo curto - ração consumida do peso - Boi gordo (21 a 28 meses)
+540,Pecuária de ciclo curto - Peso na saída (kg) - Boi gordo (29 a 36 meses)
+1.6,Pecuária de ciclo curto - Ganho diário (kg) - Boi gordo (29 a 36 meses)
+0.01,Pecuária de ciclo curto - ração consumida do peso - Boi gordo (29 a 36 meses)
+214,Dg1 Transporte interno (quantidade)
+43,Dg11 Transporte interno (custo unitário)
+7,Dg2 Assistência veterinária (quantidade)
+2000,Dg21 Assistência veterinária (custo unitário)
+12,Dg3 Despesas contabilidade (quantidade)
+800,Dg31 Despesas contabilidade (custo unitário)
+19286,Dg4 Energia elétrica (quantidade)
+0.41,Dg41 Energia elétrica (custo unitário)
+5,Preparação do Solo - Unidade - Destoca
+1.2,Preparação do Solo - Unidade - Topografia
+1.1,Preparação do Solo - Unidade - Terraceamento
+1.1,Preparação do Solo - Unidade - Adequação de carreadores
+0,Preparação do Solo - Unidade - Destruição química
+0.45,Preparação do Solo - Unidade - Distribuição de calcário
+0.15,Preparação do Solo - Unidade - Carregamento de calcário
+85,Preparação do Solo - Preço Unitário - Destoca
+10,Preparação do Solo - Preço Unitário - Topografia
+87.5,Preparação do Solo - Preço Unitário - Terraceamento
+71.0,Preparação do Solo - Preço Unitário - Adequação de carreadores
+73.4,Preparação do Solo - Preço Unitário - Destruição química
+69.6,Preparação do Solo - Preço Unitário - Distribuição de calcário
+71.0,Preparação do Solo - Preço Unitário - Carregamento de calcário
+2,Formação de Pasto - Unidade - Gradagem
+0,Formação de Pasto - Unidade - Aração
+0,Formação de Pasto - Unidade - Niveladora
+0.3,Formação de Pasto - Unidade - Semeação/adubação
+0.8,Formação de Pasto - Unidade - Aplicação de herbicida
+18,Formação de Pasto - Unidade - Semente
+2,Formação de Pasto - Unidade - Calcário dolomítico
+1.6,Formação de Pasto - Unidade - Herbicida Tordon + óleo mineral
+90,Formação de Pasto - Preço Unitário - Gradagem
+70.5,Formação de Pasto - Preço Unitário - Aração
+75,Formação de Pasto - Preço Unitário - Niveladora
+50,Formação de Pasto - Preço Unitário - Semeação/adubação
+73.4,Formação de Pasto - Preço Unitário - Aplicação de herbicida
+8.5,Formação de Pasto - Preço Unitário - Semente
+110,Formação de Pasto - Preço Unitário - Calcário dolomítico
+3.1,Formação de Pasto - Preço Unitário - Fertilizante - ureia
+61.8,Formação de Pasto - Preço Unitário - Herbicida Tordon + óleo mineral
+10,Formação de Pasto - Vida útil da pasto (em anos)
+0.35,Manutenção de Pasto - Unidade - Distribuição de calcário
+0,Manutenção de Pasto - Unidade - Gradagem
+0,Manutenção de Pasto - Unidade - Distribuição de fertilizante
+0.6,Manutenção de Pasto - Unidade - Aplicação de herbicida
+50,Manutenção de PastoBni - Unidade - Fertilizante - ureia
+80,Manutenção de PastoMni - Unidade - Fertilizante - ureia
+100,Manutenção de PastoAni - Unidade - Fertilizante - ureia
+50,Formação de PastoBni - Unidade - Fertilizante - ureia
+150,Formação de PastoMni - Unidade - Fertilizante - ureia
+250,Formação de PastoAni - Unidade - Fertilizante - ureia
+1,Manutenção de Pasto - Unidade - Calcario
+3.6,Manutenção de Pasto - Unidade - herbicida tordon + óleo
+50.1,Manutenção de Pasto - Preço Unitário - Distribuição de calcário
+89.5,Manutenção de Pasto - Preço Unitário - Gradagem
+46.9,Manutenção de Pasto - Preço Unitário - Distribuição de fertilizante
+74.4,Manutenção de Pasto - Preço Unitário - Aplicação de herbicida
+110,Manutenção de Pasto - Preço Unitário - Calcario
+61.8,Manutenção de Pasto - Preço Unitário - herbicida tordon + óleo
+1696,Valor da terra nua no município de exploração (R$/ha)
+0.0030,Grau de utilização (GU) em %
+0.4,Invest. dos sócios (% ano)
+0.6,Aquisição de capital de terceiro sobre o valor do rebanho (%)
+10,Total de parcelas (ano)
+2,Carência para pag. passivo (ano)
+0.07,Taxa de juros (a.a)
+0.03,Taxa real de desconto real já expurgando a inflação
+0.03,Taxa Financiamento MTIR
+0.045,Taxa de inflação (a.a)
