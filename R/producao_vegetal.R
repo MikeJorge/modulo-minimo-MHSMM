@@ -1,3 +1,10 @@
+#################################################################################################################################################
+# O script define um conjunto de funções para calcular os custos e processos envolvidos na produção vegetal dentro de uma unidade produtiva 
+# de bovinocultura. As funções utilizam dados de atividades específicas (preparo do solo, formação e manutenção de pastagens) e preços unitários para 
+# calcular valores totais e custos associados, retornando essas informações de forma estruturada para posterior análise ou integração com outras
+#  partes do sistema.
+#################################################################################################################################################
+
 #' Title
 #'
 #' @param soil_preparation Preparo do solo
