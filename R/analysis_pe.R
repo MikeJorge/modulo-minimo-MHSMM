@@ -1,3 +1,10 @@
+####################################################################################################################################################
+# Este script define a função analysis_pe que realiza uma análise do ponto de equilíbrio econômico para uma propriedade simulada. Ele calcula 
+# custos fixos, variáveis e totais, bem como a receita líquida e o lucro, em função do número de cabeças de animais. A função também gera um 
+# gráfico utilizando ggplot2 para visualizar esses dados. Os resultados são retornados em uma lista que inclui os vetores calculados e o gráfico. 
+# Essa análise é útil para entender como diferentes níveis de produção impactam a rentabilidade da propriedade.
+####################################################################################################################################################
+
 library(ggplot2)
 
 #' @title Análise do Ponto de Equilíbrio Econômico
