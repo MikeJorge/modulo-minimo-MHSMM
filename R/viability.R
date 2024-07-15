@@ -1,3 +1,9 @@
+#######################################################################################################################################################
+# O script realiza uma análise da viabilidade econômica de uma propriedade rural, considerando variáveis de entrada do ambiente de produção e bioma, 
+# da propriedade simulada e produção animal e econômicos, resultando em 23 variáveis de fluxo de caixa e os ndicadores financeiros finais (MTIR (Taxa 
+# Interna de Retorno Modificada), VPL (Valor Presente Líquido) e Payback, fornecendo uma avaliação detalhada dos fluxos de caixa e indicadores financeiros ao longo do tempo.
+########################################################################################################################################################
+
 library(FinCal)
 
 #' @title Análise de Viabilidade Econômica
