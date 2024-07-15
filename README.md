@@ -1,5 +1,5 @@
 # Módulo Mínimo da bovinocultura de corte em pasto no Brasil
-Este repositório contém o código-fonte necessário para a definição do módulo mínimo de exploração da bovinocultura de corte em pasto nos biomas Amazônia, Cerrado e Mata Atlântica.
+Este repositório contém o código-fonte necessário para a definição do módulo mínimo de exploração da bovinocultura de corte em pasto nos biomas Amazônia, Cerrado e Mata Atlântica, levando em consideração a renda requerida pelo bovinocultor definida a priori.
 
 O modelo híbrido de simulação de Módulo Mínimo (MHSMM) apresenta uma arquitetura modular estruturada em quatro submodelos distintos, que são:
 1. *Módulo 1: Ambiente de Produção*
@@ -27,6 +27,7 @@ Diagrama simplificado da modelagem do fluxo de dados de saída. Bovinocultura de
 Diagrama simplificado de caso de uso. Modelo Híbrido de Simulação Módulo Mínimo (MHSMM). Brasil.
 ![image](https://github.com/user-attachments/assets/ebbe9881-f9fd-4a48-9c55-e1d5731b2443)
 
-# Exemplo
+# Objetivo
+O modelo fornece o número inicial de matrizes (vacas) e o tamanho da área total (ha) necessária para atingir a renda desejada pelo bovinocultor (R$/ano).
 
 Conferir o arquivo [main.R](R/main.R).
