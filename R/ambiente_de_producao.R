@@ -1,3 +1,16 @@
+########################################################################################################################################
+# O script define um conjunto de funções (para simular a produção de gado de corte em uma unidade produtiva. O foco está na criação de um 
+# ambiente de produção, definição de dados da unidade produtiva, criação de inventário, e simulação da propriedade, incluindo cálculos 
+# detalhados de biologia animal, aquisições, evolução do rebanho, planejamento e cálculos econômicos. 
+# Principais Funções:
+# 1. 'ambiente_de_producao' Combina dados da unidade produtiva e do inventário.
+# 2. 'bio_productive_unit' Define parâmetros da unidade produtiva, como nível de intensificação, número de matrizes, capacidade de suporte, 
+# taxa de Funrural e taxa de arrendamento.
+# 3. 'inventario' Calcula o valor inicial, valor de sucata e depreciação de equipamentos e estruturas, considerando o nível de intensificação.
+# 4. 'simula_propriedade' Simula a evolução do rebanho e realiza cálculos econômicos e biológicos detalhados. Inclui cálculos de aquisição e 
+# venda de animais, mortalidade, produção anual, planejamento de manejo sanitário e suplementação alimentar.
+###########################################################################################################################################
+
 ambiente_de_producao <- function(productive_unit, inventario) {
   x <- list(productive_unit, inventario)
   names(x) <- c("productive_unit", "inventario")
