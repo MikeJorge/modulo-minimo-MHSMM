@@ -1,3 +1,9 @@
+##########################################################################################################################################
+# O script calcula a viabilidade econômica e produtiva de um sistema de produção pecuária, ajustando os parâmetros para encontrar a 
+# configuração mínima necessária que atenda às exigências de renda financeira do produtor, considerando diferentes níveis de intensificação e 
+# características do bioma.
+##########################################################################################################################################
+
 # Script para executar o MMBC --------------------------------------------------
 
 # compila o arquivo com funções criadas
