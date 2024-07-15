@@ -11,7 +11,7 @@ O modelo híbrido de simulação de Módulo Mínimo (MHSMM) apresenta uma arquit
 3. *Módulo 3: Produção Animal (Desempenho)*
    - Este módulo simula o desempenho dos animais, incluindo ganho de peso, taxas de crescimento e outras métricas zootécnicas relevantes.
 
-4. *Módulo 4: Econômico (Viabilidade)*
+4. *Módulo 4: Econômico (Viabilidade e risco)*
    - Focado na análise econômica, este submodelo avalia a viabilidade financeira da exploração, considerando custos, receitas e indicadores de rentabilidade.
 
      ![image](https://github.com/user-attachments/assets/bf083bc0-bda3-4b48-97a9-1b95c4714cfc)
