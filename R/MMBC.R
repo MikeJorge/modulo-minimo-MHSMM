@@ -3,6 +3,20 @@
 # considerando diversos parâmetros econômicos, ambientais e produtivos. As funções principais (MMBC e find_MMBC_seq) são responsáveis por
 # configurar o ambiente de produção, calcular custos, simular a produção e realizar análises de viabilidade econômica. A saída é uma lista 
 # detalhada contendo todas as informações necessárias para avaliar a viabilidade e eficiência da produção.
+#  Principais funções:
+# 1. 'MMBC_core': Função principal que integra diversas funções auxiliares para calcular a viabilidade do projeto pecuário.
+# 2. 'ambiente_de_producao': Função auxiliar chamada dentro de MMBC_core que calcula os parâmetros do ambiente de produção.
+# 3. 'bio_productive_unit': Função auxiliar chamada dentro de ambiente_de_producao que define os parâmetros da unidade produtiva.
+# 4. 'inventario': Função auxiliar chamada dentro de ambiente_de_producao que calcula o valor inicial, valor de sucata e depreciação de equipamentos e estruturas.
+# 5. 'producao_vegetal': Função auxiliar chamada dentro de MMBC_core que calcula a produção vegetal.
+# 6. 'soil_preparation': Função auxiliar chamada dentro de producao_vegetal que calcula os parâmetros da preparação do solo.
+# 7. 'pasture_formation': Função auxiliar chamada dentro de producao_vegetal que calcula a formação do pasto.
+# 8. 'pasture_maintenance': Função auxiliar chamada dentro de producao_vegetal que calcula a manutenção do pasto.
+# 9. 'producao_animal': Função auxiliar chamada dentro de MMBC_core que calcula a produção animal.
+# 10. 'simula_propriedade': Função auxiliar chamada dentro de MMBC_core que realiza a simulação completa da propriedade.
+# 11. 'economico': Função auxiliar chamada dentro de MMBC_core que calcula os parâmetros econômicos.
+# 12. 'find_MMBC': Função que realiza uma busca binária para encontrar o número mínimo de matrizes que torna o projeto viável.
+# 13. 'find_MMBC_seq': Função que realiza uma busca sequencial e binária para encontrar o número mínimo de matrizes que torna o projeto viável.
 ###########################################################################################################################################
 
 
