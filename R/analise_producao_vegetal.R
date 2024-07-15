@@ -1,3 +1,10 @@
+###########################################################################################################################################
+# Este script realiza uma análise detalhada e otimização do MHSMM para diferentes pontos geográficos e condições de produção.
+# Ele utiliza dados de entrada de múltiplas fontes, processa esses dados através de funções específicas e gera resultados otimizados
+# que são exportados para um arquivo Excel. O processamento inclui a preparação de dados por praça, execução de simulações e agregação
+#  de resultados, proporcionando uma visão abrangente e detalhada para suportar a tomada de decisões na gestão de bovinos de corte.
+###########################################################################################################################################
+
 # Prepara o ambiente -----------------------------------------------------------
 library(readxl)
 library(openxlsx)
