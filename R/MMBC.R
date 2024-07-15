@@ -1,3 +1,11 @@
+#########################################################################################################################################
+# O script define um conjunto abrangente de funções para calcular e simular a produção de uma propriedade de bovinocultura de corte, 
+# considerando diversos parâmetros econômicos, ambientais e produtivos. As funções principais (MMBC e find_MMBC_seq) são responsáveis por
+# configurar o ambiente de produção, calcular custos, simular a produção e realizar análises de viabilidade econômica. A saída é uma lista 
+# detalhada contendo todas as informações necessárias para avaliar a viabilidade e eficiência da produção.
+###########################################################################################################################################
+
+
 MMBC_core <- function(file, num_matrizes, remuneracao, nivel_intensificacao,
                       bioma, cap_sup = 1.5) {
 
