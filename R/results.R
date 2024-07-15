@@ -1,3 +1,17 @@
+#########################################################################################################################################################
+# o script processa dados de uma propriedade rural simulada para gerar análises detalhadas de custos, viabilidade econômica, evolução do 
+# rebanho e inventário, fornecendo uma visão abrangente da operação e facilitando a tomada de decisões.
+# Os dados de entrada incluem informações sobre a propriedade simulada, como a evolução do rebanho e parâmetros de produção. Também são 
+# fornecidos detalhes dos custos fixos e variáveis da propriedade, resultados da análise de viabilidade econômica (incluindo fluxos de caixa,
+# receita, impostos e indicadores de viabilidade), dados do ambiente de produção (como inventário de máquinas e implementos) e o tipo de bioma 
+# onde a propriedade está localizada (Mata Atlântica, Amazônia, Cerrado, etc.).
+# Os dados de saída são organizados em várias tabelas e arrays. As tabelas de resultados incluem um detalhamento dos custos fixos e variáveis, 
+# participação no custo total, receitas, custos operacionais, margem bruta, lucro operacional, lucro total e lucratividade por hectare. Indicadores
+# econômicos detalhados e indicadores técnicos da produção são apresentados. Resultados específicos do MHSMM são fornecidos, assim como um detalhamento 
+# dos fluxos de caixa da propriedade e a evolução do rebanho. O inventário de máquinas e implementos é detalhado em uma tabela. Além disso, o 
+# script gera um array contendo todos os resultados calculados, nomeados de acordo com as variáveis definidas para facilitar a análise de Monte Carlo.
+#########################################################################################################################################################
+
 #' @title Cria tabelas com resultados da análise
 #'
 #' @param propriedade Propriedade simulada
