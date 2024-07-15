@@ -1,3 +1,10 @@
+##############################################################################################################################################
+# O script define um conjunto abrangente de funções para calcular e retornar parâmetros biológicos e econômicos de diferentes categorias 
+# de bovinos. Cada função recebe um conjunto de parâmetros específicos, armazena-os em uma lista com nomes apropriados e retorna essa lista. 
+# Essas funções são úteis para padronizar a entrada e saída de dados, facilitando análises subsequentes e permitindo uma gestão mais eficiente 
+# das informações relacionadas à produção bovina.
+###############################################################################################################################################
+
 #' @title Vaca (37 a 48 meses) biological and economic performance
 #'
 #' @param P1 Preço da vaca gorda com Funrural
