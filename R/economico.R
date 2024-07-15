@@ -1,3 +1,10 @@
+############################################################################################################################################
+# O script define um conjunto abrangente de funções para calcular e retornar parâmetros econômicos e financeiros de uma propriedade de 
+# bovinocultura. A função principal economico realiza cálculos detalhados de custos de mão de obra, despesas gerais e viabilidade econômica, 
+# enquanto as funções auxiliares fornecem suporte para a estruturação dos dados de entrada. Essas funções são essenciais para avaliar a 
+# viabilidade econômica e gerenciar os custos de uma operação de bovinocultura de forma eficiente e detalhada.
+#############################################################################################################################################
+
 #' @title Econômico 
 #'
 #' @param labor Mão de obra
