@@ -1,3 +1,22 @@
+########################################################################################################################################
+# O script calcula variáveis de saída do módulo de produção animal de um sistema de produção pecuária. Ele define diversas funções auxiliares 
+# que criam listas de dados estruturados, e uma função principal producao_animal que agrupa essas listas em uma única lista mais abrangente.
+# Funções Auxiliares - Cada função auxiliar cria uma lista com nomeação específica para diferentes aspectos do sistema de produção animal:
+# 1. 'pesos': Define os pesos iniciais e comerciais de diferentes categorias de animais.
+# 2. 'rendimentos': Define os rendimentos de carcaça para diferentes categorias de animais.
+# 3. 'pressao': Define a pressão de seleção para diferentes categorias de animais.
+# 4. 'coeficientes': Define os coeficientes de uso animal (UA) para diferentes categorias de animais.
+# 5. 'aquisicao': Define os números de aquisição de diferentes categorias de animais.
+# 6. 'premio': Define os prêmios de carcaça para diferentes categorias de animais.
+# 7. 'mortalidade': Define as taxas de mortalidade para diferentes fases do ciclo de vida animal.
+# 8. 'ciclo_curto': Define parâmetros relacionados à produção de ciclo curto.
+# 9. 'referencias_zootecnicas': Define referências zootécnicas importantes, como taxa de natalidade e reposição.
+# 10. 'consumo': Define o consumo diário nutricional para diferentes categorias de animais.
+# 11. 'vacinas': Define os diferentes tipos de vacinas e vermífugos administrados às diferentes categorias de animais.
+# A função producao_animal recebe os dados de diferentes aspectos do sistema de produção animal, organizados em listas criadas pelas 
+# funções auxiliares, e os agrupa em uma lista final, nomeando cada componente da lista de acordo com sua função.
+##########################################################################################################################################
+
 #' @title Módulo de produção animal
 #' 
 #' @description
