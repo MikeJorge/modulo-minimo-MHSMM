@@ -1,3 +1,11 @@
+##############################################################################################################################################
+# A função costs calcula e retorna uma planilha de custos para uma propriedade simulada, considerando custos fixos e variáveis. Ela utiliza
+# dados sobre a propriedade, ambiente de produção, produção vegetal e aspectos econômicos para calcular os custos de diferentes componentes, 
+# como pastagem, instalações, máquinas, insumos, mão de obra e outros custos. A função retorna uma lista com o custo total, detalhamento dos 
+# custos fixos e variáveis, e a participação percentual de cada tipo de custo no custo total. Essa função é essencial para avaliar a viabilidade 
+# econômica e gerenciar os custos de uma operação de bovinocultura.
+##############################################################################################################################################
+
 #' @title Planilha de custos
 #'
 #' @param propriedade Propriedade simulada
