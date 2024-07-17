@@ -24,7 +24,7 @@ Diagrama simplificado da modelagem do fluxo de dados de saída. Bovinocultura de
 
 # Caso de uso
 Diagrama simplificado de caso de uso. Modelo Híbrido de Simulação Módulo Mínimo (MHSMM). Brasil.
-![image](https://github.com/user-attachments/assets/4249d1b4-cb0c-4402-b162-fba6afd303c4)
+![image](https://github.com/user-attachments/assets/67facd70-0da2-4b3e-ac18-d8eee5c6579d)
 
 # Objetivo
 O modelo fornece o número inicial de matrizes (vacas) e o tamanho da área total (ha) necessária para atingir a renda desejada pelo bovinocultor (R$/ano).
