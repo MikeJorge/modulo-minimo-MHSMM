@@ -20,7 +20,7 @@ A integração desses submodelos permite uma análise abrangente e detalhada das
 
 Diagrama simplificado da modelagem do fluxo de dados de saída. Bovinocultura de corte de ciclo completo em pasto. Modelo Híbrido de Simulação Módulo Mínimo (MHSMM). Brasil.
  
- ![image](https://github.com/user-attachments/assets/b39c716f-f66b-4ea7-8d42-8b50cde28aae)
+ ![image](https://github.com/user-attachments/assets/f08267a4-6395-4bdb-bf16-c87a379e1f5a)
 
 # Caso de uso
 Diagrama simplificado de caso de uso. Modelo Híbrido de Simulação Módulo Mínimo (MHSMM). Brasil.
