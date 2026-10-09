@@ -1,3 +1,12 @@
+> **English documentation**
+>
+> For international readers and Nature Food reviewers: [README_EN_US.md](README_EN_US.md).
+>
+> Interactive application: [MHSMM EN-USA demonstrator](https://mike-jorge.shinyapps.io/mhsmm-enusa/).
+>
+> This repository preserves the historical R implementation developed during
+> the 2024 doctoral work. Scientific code and historical identifiers remain unchanged.
+
 # Módulo Mínimo da bovinocultura de corte em pasto no Brasil
 Este repositório contém o código-fonte necessário para a definição do módulo mínimo de exploração da bovinocultura de corte em pasto nos biomas Amazônia, Cerrado e Mata Atlântica, levando em consideração a renda requerida pelo bovinocultor definida a priori.
 
