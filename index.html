@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>MM Scientific Software Development and Assurance Methodology · MM Scientific Software Development Methodology</title>
+  <link rel="stylesheet" href="assets/mm.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">Module Minimum (MM)</p>
+      <h1>MM Scientific Software Development Methodology</h1>
+      <p class="status">Controlled derivative · not normative authority · not runtime authorization</p>
+    </div>
+  </header>
+  <div class="layout wrap">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <h2>Contents</h2>
+      <ul><li><a href="index.html">Methodology</a></li></ul>
+      
+      <h2>On this page</h2>
+      <ul><li><a href="#1-purpose">1. Purpose</a></li><li><a href="#2-the-governing-assurance-question">2. The governing assurance question</a></li><li><a href="#3-authority-hierarchy-and-evidence-discipline">3. Authority hierarchy and evidence discipline</a></li><li><a href="#4-architecture-of-the-mm-scientific-system">4. Architecture of the MM scientific system</a></li><li><a href="#5-five-plane-execution-architecture">5. Five-plane execution architecture</a></li><li><a href="#6-gate-governed-scientific-development">6. Gate-governed scientific development</a></li><li><a href="#7-scientific-software-development-lifecycle">7. Scientific software development lifecycle</a></li><li><a href="#8-verification-validation-and-ivv-inspired-completeness-checks">8. Verification, validation, and IV&V-inspired completeness checks</a></li><li><a href="#9-multi-agent-assurance-and-separation-of-duties">9. Multi-agent assurance and separation of duties</a></li><li><a href="#10-execution-classes-and-authorization-boundary">10. Execution classes and authorization boundary</a></li><li><a href="#11-local-execution-adapter-and-least-privilege">11. Local execution adapter and least privilege</a></li><li><a href="#12-harness-reliability-profile">12. Harness reliability profile</a></li><li><a href="#13-data-engineering-metadata-provenance-and-evidence">13. Data engineering, metadata, provenance, and evidence</a></li><li><a href="#14-geospatial-and-gee-assurance">14. Geospatial and GEE assurance</a></li><li><a href="#15-mathematical-and-numerical-assurance">15. Mathematical and numerical assurance</a></li><li><a href="#16-statistical-geostatistical-monte-carlo-and-uq-assurance">16. Statistical, geostatistical, Monte Carlo, and UQ assurance</a></li><li><a href="#17-scientific-model-credibility">17. Scientific model credibility</a></li><li><a href="#18-configuration-management-deterministic-packaging-and-exact-byte-authority">18. Configuration management, deterministic packaging, and exact-byte authority</a></li><li><a href="#19-independent-review-mutation-testing-and-adversarial-assurance">19. Independent review, mutation testing, and adversarial assurance</a></li><li><a href="#20-agent-control-execution-plane-implementation-roadmap">20. Agent Control / Execution Plane implementation roadmap</a></li><li><a href="#21-development-change-acceptance-matrix">21. Development-change acceptance matrix</a></li><li><a href="#22-claim-discipline-for-scientific-publications">22. Claim discipline for scientific publications</a></li><li><a href="#23-publication-facing-reproducibility-profile">23. Publication-facing reproducibility profile</a></li><li><a href="#24-two-article-role-of-this-methodology">24. Two-article role of this methodology</a></li><li><a href="#25-resumption-of-scientific-development">25. Resumption of scientific development</a></li><li><a href="#26-known-limitations-and-unresolved-states">26. Known limitations and unresolved states</a></li><li><a href="#27-methodology-document-acceptance-criteria">27. Methodology document acceptance criteria</a></li><li><a href="#28-mkdocs-implementation-profile">28. MkDocs implementation profile</a></li><li><a href="#29-operating-checklist-for-future-mm-development-gates">29. Operating checklist for future MM development Gates</a></li><li><a href="#30-references-and-source-authority">30. References and source authority</a></li><li><a href="#terminal-document-state">Terminal document state</a></li></ul>
+      
+    </nav>
+    <main id="main-content" class="content" tabindex="-1"><h1 id="mm-scientific-software-development-and-assurance-methodology">MM Scientific Software Development and Assurance Methodology</h1>
+<p><strong>Version:</strong> 1.0.1<br />
+<strong>Project:</strong> Artigo 2 - MM<br />
+<strong>Document class:</strong> controlled human-readable methodological derivative<br />
+<strong>Normative status:</strong> non-normative; certified project authorities control<br />
+<strong>Runtime consequence:</strong> none<br />
+<strong>Publication consequence:</strong> none</p>
+<blockquote>
+<p><strong>Control rule.</strong> This Markdown explains and operationalizes the development methodology supported by the certified MM authorities. It does <strong>not</strong> supersede the certified Architecture, Manual, Project Evidence Base, exact Git commits/trees, certified packages, or run-specific Gate authorities. Any discrepancy is a <code>HOLD</code>, not an editorial choice.</p>
+</blockquote>
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This document defines the <strong>scientific software development and assurance methodology</strong> used to develop, verify, validate, integrate, release, and govern the Module Minimum (MM/MHSMM) scientific software system. Its purpose is to make the development method independently inspectable, reproducible, traceable, and suitable for rigorous scientific peer review.</p>
+<p>The methodology is derived from the project's certified <strong>Scientific Execution Architecture v1.0.2</strong>, certified <strong>Scientific Software Development &amp; Assurance Manual v1.0.1 RC3</strong>, certified <strong>Project Evidence Base v1.0.0</strong>, qualified local execution-adapter record, Harness Reliability Profile, and controlled Technical Reference. It is also informed by NASA software engineering, software assurance, IV&amp;V, and model/simulation credibility guidance, without claiming NASA compliance, endorsement, affiliation, or certification.</p>
+<p>The method is designed for a multidisciplinary scientific system in which geospatial processing, mechanistic plant modeling, animal response, stochastic economics, uncertainty quantification, data engineering, provenance, and scientific inference interact. In this context, software correctness is necessary but not sufficient: the project must also establish that the <strong>scientific problem, requirements, architecture, interfaces, tests, controls, and acceptance criteria are the right ones for the intended scientific use</strong>.</p>
+<h2 id="2-the-governing-assurance-question">2. The governing assurance question</h2>
+<p>The central assurance question is deliberately two-dimensional:</p>
+<ol>
+<li><strong>Was the system built correctly?</strong><br />
+Does the implementation conform to the specified requirements, architecture, interfaces, contracts, numerical rules, security constraints, and release criteria?</li>
+<li><strong>Was the correct system built?</strong><br />
+Do the requirements, architecture, controls, tests, and acceptance criteria represent the intended scientific use and the actual scientific question?</li>
+</ol>
+<p>NASA software engineering guidance distinguishes these dimensions as <strong>verification</strong> and <strong>validation</strong>. Verification evaluates whether software products satisfy specified requirements and are produced correctly; validation evaluates whether the as-built product fulfills its intended use in its intended environment. NASA IV&amp;V guidance further requires independent examination of artifacts for properties including <strong>correctness, completeness, consistency, traceability, and testability</strong> across requirements, architecture/design, code, interfaces, and testing [EXT-NASA-NPR7150], [EXT-NASA-SWE067], [EXT-NASA-IVV], [EXT-NASA-SA].</p>
+<p>For MM, this distinction is a methodological invariant:</p>
+<pre><code class="language-text">IMPLEMENTATION_CONFORMS_TO_REQUIREMENTS
+        does not imply
+REQUIREMENTS_REPRESENT_THE_RIGHT_SCIENTIFIC_SYSTEM
+</code></pre>
+<p>and:</p>
+<pre><code class="language-text">REPRODUCIBLE_EXECUTION
+        does not imply
+SCIENTIFIC_VALIDITY
+</code></pre>
+<p>A Gate cannot receive a scientific PASS merely because code ran successfully, a build was reproducible, or outputs were produced. The controlling evidence must support both the implementation claim and the intended-use/scientific-validity claim that applies to that Gate.</p>
+<h2 id="3-authority-hierarchy-and-evidence-discipline">3. Authority hierarchy and evidence discipline</h2>
+<h3 id="31-certified-controlling-authorities">3.1 Certified controlling authorities</h3>
+<p>The current certified baseline represented by this methodology is:</p>
+<table>
+<thead>
+<tr>
+<th>Authority</th>
+<th>Certified state</th>
+<th>Immutable control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scientific Execution Architecture</td>
+<td><code>MM_SCIENTIFIC_EXECUTION_ARCHITECTURE_v1.0.2_RC2</code></td>
+<td>Certification Commit B <code>75da6a6a1006c445eff4d589396813d6429fc51e</code></td>
+</tr>
+<tr>
+<td>Scientific Software Development &amp; Assurance Manual</td>
+<td><code>MM_SCIENTIFIC_SOFTWARE_DEVELOPMENT_AND_ASSURANCE_MANUAL_v1.0.1_RC3</code></td>
+<td>Certification Commit B <code>01e9a94a7909af9436443ad016e5df06302576b4</code></td>
+</tr>
+<tr>
+<td>Project Evidence Base</td>
+<td><code>v1.0.0</code></td>
+<td>Certification Commit B <code>650dd2cc8a8b04e993309485fe4f72b07858dfa6</code></td>
+</tr>
+<tr>
+<td>Production-reference <code>main</code></td>
+<td>reference only</td>
+<td><code>af64a215ce8c67548802df1a3997015db37ec0f6</code></td>
+</tr>
+</tbody>
+</table>
+<p>The Architecture is the superior constitutional authority. The Manual is a subordinate normative refinement: it may operationalize, restrict, or add evidence requirements, but it cannot make an architecturally forbidden behavior admissible.</p>
+<p>Formally, the certified relationship is:</p>
+<pre><code class="language-text">B(Architecture ∧ Manual) ⊆ B(Architecture)
+Override(Manual, Architecture) = false
+</code></pre>
+<h3 id="32-evidence-classification">3.2 Evidence classification</h3>
+<p>Every material claim should be labeled internally by its evidentiary status:</p>
+<ul>
+<li><strong>DIRECT</strong> — measured or read directly from admitted bytes, a runtime observation, or an authoritative source;</li>
+<li><strong>BOUND</strong> — established through an exact cryptographic or referential binding to a DIRECT authority;</li>
+<li><strong>DERIVED</strong> — logically derived from admitted predicates or source relationships;</li>
+<li><strong>HISTORICAL</strong> — valid as a preserved prior observation but not freshly re-measured;</li>
+<li><strong>NOT_ESTABLISHED</strong> — not proven by the available evidence.</li>
+</ul>
+<p>No <code>DERIVED</code> statement may be presented as a fresh physical observation. No <code>HISTORICAL</code> result may be silently promoted into current runtime authorization. No gap may be filled by conversational plausibility.</p>
+<h3 id="33-project-source-discipline">3.3 Project Source discipline</h3>
+<p>Project Sources form a canonical reusable working knowledge base, not the complete event log. Intermediate attempts, commands, transient failures, and superseded states remain in conversation/Gate provenance; durable authorities and terminal states are represented in canonical sources. This prevents event history from being mistaken for the active scientific baseline.</p>
+<h2 id="4-architecture-of-the-mm-scientific-system">4. Architecture of the MM scientific system</h2>
+<p>MM separates <strong>scientific modules</strong> from the <strong>execution-control infrastructure</strong> that governs them.</p>
+<h3 id="41-scientific-modules">4.1 Scientific modules</h3>
+<pre><code class="language-text">MM SCIENTIFIC SYSTEM
+│
+├── MM-ENVIRONMENT
+│   └── climate, soil, terrain, land cover, geospatial support, GEE
+│
+├── MM-PLANT
+│   └── DSSAT / forage / plant response
+│
+├── MM-ANIMAL
+│   └── animal production and biological constraints
+│
+├── MM-ECONOMIC
+│   └── economics, risk, Monte Carlo, decision outputs
+│
+├── MM-INTEGRATION-CORE
+│   └── contract-bound cross-module orchestration
+│
+└── MM-DATA-CATALOG
+    └── data contracts, metadata, quality, provenance, catalog interfaces
+</code></pre>
+<p>Modules are independently evolvable but may interact only through explicit, versioned contracts. An internal state in one module is not an implicit API for another module.</p>
+<pre><code class="language-text">MODULE OUTPUT
+      ↓
+VERSIONED DATA CONTRACT
+      ↓
+CATALOG RECORD
+      ↓
+PROVENANCE / EVIDENCE BINDING
+      ↓
+INTEGRATION ADAPTER
+      ↓
+CONSUMER MODULE
+</code></pre>
+<h3 id="42-minimum-inter-module-contract">4.2 Minimum inter-module contract</h3>
+<p>Each material interface must specify, as applicable:</p>
+<ul>
+<li>schema and semantic version;</li>
+<li>variable definition and scientific meaning;</li>
+<li>units and dimensional conventions;</li>
+<li>valid domain/ranges and biological or physical constraints;</li>
+<li>missingness, null semantics, and forbidden implicit defaults;</li>
+<li>spatial reference, including CRS, coordinate operation where material, axis semantics, grid/affine transform, resolution, extent, support, mask, and resampling rules;</li>
+<li>temporal reference, aggregation window, calendar, and time-zone semantics;</li>
+<li>provenance, acquisition/version identity, transformations, and evidence links;</li>
+<li>compatibility/deprecation rules;</li>
+<li>positive, negative, boundary, and off-nominal contract tests.</li>
+</ul>
+<h2 id="5-five-plane-execution-architecture">5. Five-plane execution architecture</h2>
+<p>The scientific system is governed through five coupled planes.</p>
+<table>
+<thead>
+<tr>
+<th>Plane</th>
+<th>Function</th>
+<th>Core invariant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Control Plane</strong></td>
+<td>defines Gates, scope, authorities, permissions, terminal predicates, and adjudication</td>
+<td>no scientific side effect</td>
+</tr>
+<tr>
+<td><strong>Execution Plane</strong></td>
+<td>performs explicitly authorized mutable work</td>
+<td>exactly one mutable actor per Gate</td>
+</tr>
+<tr>
+<td><strong>Authority Plane</strong></td>
+<td>stores immutable controlling identities</td>
+<td>no implicit “latest”</td>
+</tr>
+<tr>
+<td><strong>Data / Catalog Plane</strong></td>
+<td>governs computational data contracts and discovery metadata</td>
+<td>catalog metadata does not substitute for computational semantics</td>
+</tr>
+<tr>
+<td><strong>Evidence / Provenance Plane</strong></td>
+<td>stores claims, evidence, provenance, receipts, readbacks, conflicts, and gaps</td>
+<td>evidence must be explicit, attributable, and decision-linked</td>
+</tr>
+</tbody>
+</table>
+<p>The local Linux/Codex environment is an <strong>Execution Adapter</strong>, not the architecture itself.</p>
+<h2 id="6-gate-governed-scientific-development">6. Gate-governed scientific development</h2>
+<p>A <strong>Gate</strong> is a versioned stateful control boundary. It binds:</p>
+<ul>
+<li>exact input authorities;</li>
+<li>scientific question and intended decision;</li>
+<li>actors and roles;</li>
+<li>capabilities;</li>
+<li>preconditions and predicates;</li>
+<li>permitted side effects and budgets;</li>
+<li>objective evidence requirements;</li>
+<li>verification and validation methods;</li>
+<li>terminal classes;</li>
+<li>independent readback/review;</li>
+<li>next allowed state;</li>
+<li><code>STOP=true</code>.</li>
+</ul>
+<p>A successful tool invocation is never sufficient evidence of a scientifically valid state.</p>
+<h3 id="61-minimum-gate-contract">6.1 Minimum Gate contract</h3>
+<pre><code class="language-text">GATE_ID
+MODE / FAIL_CLOSED_POLICY
+CERTIFIED_INPUT_AUTHORITIES
+SCIENTIFIC_QUESTION / INTENDED_USE
+CONTEXT / MATERIALITY / MODULES / INTERFACES
+ACTIVE_ACTORS / SOLE_MUTABLE_ACTOR
+CAPABILITY_MANIFEST
+REQUIREMENT_AND_CONDITION_PLAN
+VERIFICATION_PLAN
+VALIDATION_PLAN
+OBJECTIVE_EVIDENCE_PLAN
+TERMINAL_STATE_PARTITION
+SIDE_EFFECT_BUDGET
+READBACK_METHOD
+PASS / HOLD FIELD SET
+NEXT_ALLOWED
+STOP=true
+</code></pre>
+<h3 id="62-total-and-exclusive-terminal-partition">6.2 Total and exclusive terminal partition</h3>
+<p>Before consequential execution, the admissible state space must map to a <strong>total and exclusive</strong> terminal partition:</p>
+<pre><code class="language-text">for every admissible state s:
+    exactly one terminal class C_i(s) is true
+</code></pre>
+<p>The partition must explicitly cover missing values, invalid values, null states, empty support, partial support, control failure, transport failure, off-nominal behavior, and unrelated failure modes. A natural-language statement that cases are “complete” is insufficient when mechanical enumeration or executable validation is feasible.</p>
+<h3 id="63-fail-closed-rule">6.3 Fail-closed rule</h3>
+<p>Missing, ambiguous, contradictory, stale, unclassified, or insufficient evidence yields <code>HOLD</code>, never inferred PASS or authorization.</p>
+<h2 id="7-scientific-software-development-lifecycle">7. Scientific software development lifecycle</h2>
+<p>The MM lifecycle is an evidence-producing sequence, not a coding-first workflow.</p>
+<h3 id="phase-0-scientific-need-and-intended-use">Phase 0 — Scientific need and intended use</h3>
+<p>Define:</p>
+<ul>
+<li>scientific question;</li>
+<li>intended use and decision context;</li>
+<li>estimand or target quantity;</li>
+<li>domain of validity;</li>
+<li>stakeholders/users;</li>
+<li>consequences of false positive, false negative, and unsupported outputs;</li>
+<li>materiality and risk.</li>
+</ul>
+<p><strong>Validation question:</strong> Is the proposed software problem the problem that actually needs to be solved?</p>
+<h3 id="phase-1-requirements-engineering">Phase 1 — Requirements engineering</h3>
+<p>Requirements must be:</p>
+<ul>
+<li>correct relative to the scientific need;</li>
+<li>complete for the declared scope;</li>
+<li>internally consistent;</li>
+<li>unambiguous;</li>
+<li>traceable upward to scientific/system needs;</li>
+<li>traceable downward to architecture/design/code/tests;</li>
+<li>individually verifiable or otherwise explicitly justified;</li>
+<li>testable where testability is required.</li>
+</ul>
+<p>Requirements must not be approved merely because they are implementable.</p>
+<h3 id="phase-2-architecture-and-interface-design">Phase 2 — Architecture and interface design</h3>
+<p>Architecture allocates requirements to modules, components, interfaces, authorities, data contracts, and execution boundaries. The review asks both:</p>
+<ul>
+<li><strong>verification:</strong> does the architecture satisfy the baselined requirements?;</li>
+<li><strong>validation:</strong> is the architecture suitable for the intended scientific use and credible under realistic operating/scientific conditions?</li>
+</ul>
+<p>All material cross-module relations must be explicit and versioned.</p>
+<h3 id="phase-3-detailed-design-and-algorithm-specification">Phase 3 — Detailed design and algorithm specification</h3>
+<p>The design record must identify:</p>
+<ul>
+<li>algorithm and mathematical formulation;</li>
+<li>assumptions and regularity conditions;</li>
+<li>numerical method and tolerances;</li>
+<li>failure modes;</li>
+<li>data structures and schemas;</li>
+<li>interfaces and invariants;</li>
+<li>precision/convergence requirements;</li>
+<li>performance/resource assumptions where material;</li>
+<li>negative and boundary behavior;</li>
+<li>evidence that the design remains traceable to requirements.</li>
+</ul>
+<h3 id="phase-4-implementation">Phase 4 — Implementation</h3>
+<p>Implementation must preserve the approved architecture and design. Required controls include:</p>
+<ul>
+<li>version-controlled exact source;</li>
+<li>deterministic or explicitly characterized build process;</li>
+<li>dependency/environment identity;</li>
+<li>code review/diff review;</li>
+<li>static analysis where applicable;</li>
+<li>unit tests and negative fixtures;</li>
+<li>no undocumented shared mutable state;</li>
+<li>no silent fallback that changes scientific semantics;</li>
+<li>explicit treatment of errors and unknown states.</li>
+</ul>
+<h3 id="phase-5-verification">Phase 5 — Verification</h3>
+<p>Verification establishes that implementation products conform to specified requirements. Suitable methods include, depending on the object:</p>
+<ul>
+<li>static analysis;</li>
+<li>peer inspection;</li>
+<li>unit and integration testing;</li>
+<li>contract tests;</li>
+<li>property/invariant checks;</li>
+<li>mutation testing;</li>
+<li>numerical regression tests;</li>
+<li>exact-byte identity/readback;</li>
+<li>independent oracle comparison;</li>
+<li>off-nominal and boundary tests.</li>
+</ul>
+<p>Each requirement must have an explicit verification method and minimum objective evidence.</p>
+<h3 id="phase-6-validation">Phase 6 — Validation</h3>
+<p>Validation establishes that the as-built scientific software is suitable for its intended use. Depending on the module, this can require:</p>
+<ul>
+<li>comparison with analytical solutions;</li>
+<li>comparison with trusted benchmark/reference implementations;</li>
+<li>reproduction of accepted baselines;</li>
+<li>comparison against independent empirical observations;</li>
+<li>external or withheld validation datasets;</li>
+<li>sensitivity and robustness analysis;</li>
+<li>domain-expert review;</li>
+<li>operationally representative scenarios;</li>
+<li>evaluation of model-form limitations and boundary conditions.</li>
+</ul>
+<p>Validation evidence must be scientifically relevant to the declared use; passing unit tests alone does not establish model validity.</p>
+<h3 id="phase-7-integration-verification-and-validation">Phase 7 — Integration verification and validation</h3>
+<p>The integrated MM must be evaluated separately from its components. Integration assurance includes:</p>
+<ul>
+<li>contract compatibility;</li>
+<li>unit consistency;</li>
+<li>temporal/spatial support consistency;</li>
+<li>provenance continuity;</li>
+<li>cross-module state consistency;</li>
+<li>propagation of missingness and uncertainty;</li>
+<li>interface error handling;</li>
+<li>scenario reproducibility;</li>
+<li>integrated scientific behavior against independent expectations.</li>
+</ul>
+<h3 id="phase-8-uncertainty-sensitivity-and-robustness">Phase 8 — Uncertainty, sensitivity, and robustness</h3>
+<p>The methodology distinguishes:</p>
+<ul>
+<li>parameter uncertainty;</li>
+<li>stochastic variability;</li>
+<li>measurement uncertainty;</li>
+<li>structural/model-form uncertainty;</li>
+<li>numerical error;</li>
+<li>spatial support/resolution uncertainty;</li>
+<li>scenario uncertainty.</li>
+</ul>
+<p>Sensitivity/uncertainty designs must be defined prospectively, with estimators, sampling schemes, dependence assumptions, random streams/seeds, convergence/precision criteria, and decision-relevant outputs recorded before execution.</p>
+<h3 id="phase-9-controlled-release">Phase 9 — Controlled release</h3>
+<p>A release candidate must satisfy its frozen requirement, verification, validation, evidence, and compatibility criteria. Release is denied if required evidence is absent even when the implementation appears correct.</p>
+<h3 id="phase-10-independent-readback-and-assurance">Phase 10 — Independent readback and assurance</h3>
+<p>A separate read-only reviewer reconstructs the decisive identities and predicates. The producer cannot self-certify its own mutable output.</p>
+<h3 id="phase-11-freeze-certification">Phase 11 — Freeze / certification</h3>
+<p>For durable certified authorities, the project uses an A→readback→B pattern:</p>
+<ol>
+<li><strong>Content Commit A</strong> establishes recoverable content.</li>
+<li>Complete readback/reconstruction verifies exact persisted bytes.</li>
+<li><strong>Certification Commit B</strong> records the zero-mismatch result.</li>
+</ol>
+<p>Certification does not authorize runtime.</p>
+<h2 id="8-verification-validation-and-ivv-inspired-completeness-checks">8. Verification, validation, and IV&amp;V-inspired completeness checks</h2>
+<p>The following questions are mandatory review prompts for material MM changes.</p>
+<h3 id="81-requirements">8.1 Requirements</h3>
+<ul>
+<li>Are all in-scope scientific/system requirements represented?</li>
+<li>Are requirements correct, complete, consistent, traceable, readable, and testable?</li>
+<li>Are constraints, interfaces, error states, and boundary conditions explicit?</li>
+<li>Can each requirement be verified without reinterpretation after observing results?</li>
+<li>Are requirements that cannot be directly tested still objectively assessable by analysis/review?</li>
+</ul>
+<h3 id="82-architecture">8.2 Architecture</h3>
+<ul>
+<li>Does every in-scope requirement map to one or more architectural elements?</li>
+<li>Are architecture relationships and interfaces correct, consistent, complete, and traceable?</li>
+<li>Can the architecture support the intended scientific use?</li>
+<li>Are undesired interactions and failure propagation considered?</li>
+<li>Is each authoritative boundary explicit?</li>
+</ul>
+<h3 id="83-detailed-design">8.3 Detailed design</h3>
+<ul>
+<li>Is design traceable to requirements and architecture?</li>
+<li>Are interfaces internally consistent and externally complete?</li>
+<li>Are numerical and statistical assumptions explicit?</li>
+<li>Are all material negative/off-nominal states represented?</li>
+</ul>
+<h3 id="84-implementation">8.4 Implementation</h3>
+<ul>
+<li>Does code preserve architecture, contracts, and requirements?</li>
+<li>Are all invariants enforced by typed/executable predicates where feasible?</li>
+<li>Does the implementation reject invalid states rather than normalize them silently?</li>
+<li>Are exact versions/dependencies/build inputs recorded?</li>
+</ul>
+<h3 id="85-testing">8.5 Testing</h3>
+<ul>
+<li>Does every material requirement have adequate test or analysis coverage?</li>
+<li>Are tests correct and complete relative to the requirement set?</li>
+<li>Do negative fixtures target known and plausible defect classes?</li>
+<li>Are tests independent enough to detect common-mode errors?</li>
+<li>Are acceptance criteria defined before observing the candidate?</li>
+<li>Are nominal, boundary, off-nominal, robustness, and failure-recovery cases included as applicable?</li>
+</ul>
+<h3 id="86-acceptance">8.6 Acceptance</h3>
+<p>A candidate may pass only if the <strong>evidence package is complete enough to support the claim</strong>. Evidence completeness is therefore part of product assurance, not an administrative afterthought.</p>
+<h2 id="9-multi-agent-assurance-and-separation-of-duties">9. Multi-agent assurance and separation of duties</h2>
+<p>The certified architecture registers eleven core assurance roles but activates only the subset required by a Gate.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Role</th>
+<th>Primary function</th>
+<th>Permission</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A0</td>
+<td>coordinator / final adjudicator</td>
+<td>scope, authority, sequencing, final decision</td>
+<td>read-only</td>
+</tr>
+<tr>
+<td>A1</td>
+<td>sole mutable actor</td>
+<td>edits, executes, external side effects</td>
+<td>bounded write/execute</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>scientific method / DOE</td>
+<td>intended use, estimand, controls, causal/scientific validity</td>
+<td>read-only</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>requirements / formal methods</td>
+<td>completeness, consistency, testability, decision partitions</td>
+<td>read-only</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>geodesy / CRS / GEE</td>
+<td>projection, grids, masks, spatial algorithms</td>
+<td>read-only</td>
+</tr>
+<tr>
+<td>A5</td>
+<td>provenance / Evidence Base</td>
+<td>custody, hashes, chain of evidence</td>
+<td>read-only</td>
+</tr>
+<tr>
+<td>A6</td>
+<td>mathematical / numerical</td>
+<td>well-posedness, stability, convergence, error bounds</td>
+<td>read-only</td>
+</tr>
+<tr>
+<td>A7</td>
+<td>statistics / geostatistics / UQ</td>
+<td>dependence, validation, uncertainty, sensitivity</td>
+<td>read-only</td>
+</tr>
+<tr>
+<td>A8</td>
+<td>scientific software / systems / AI</td>
+<td>SDLC, environments, tools, cloud orchestration</td>
+<td>read-only</td>
+</tr>
+<tr>
+<td>A9</td>
+<td>adversarial independent auditor</td>
+<td>counterexamples, mutation, terminal challenge</td>
+<td>read-only</td>
+</tr>
+<tr>
+<td>A10</td>
+<td>data engineering / data quality</td>
+<td>schemas, contracts, quality, catalog/lineage</td>
+<td>read-only</td>
+</tr>
+</tbody>
+</table>
+<p>Conditional domain SMEs (<code>D-ENV</code>, <code>D-PLANT</code>, <code>D-ANIMAL</code>, <code>D-ECON</code>) are activated for materially affected modules.</p>
+<p>The single-writer invariant is:</p>
+<pre><code class="language-text">MUTABLE_AGENT_COUNT = 1
+SOLE_MUTABLE_AGENT = A1
+ALL_REVIEWERS = read-only
+</code></pre>
+<p>This structure reduces concurrent-write ambiguity and common-mode assurance failure. It does not make internal review equivalent to formal external IV&amp;V.</p>
+<h2 id="10-execution-classes-and-authorization-boundary">10. Execution classes and authorization boundary</h2>
+<p>The Architecture distinguishes execution classes, including:</p>
+<pre><code class="language-text">ASSURANCE_TOOL_EXECUTION
+LOCAL_VERIFICATION_EXECUTION
+CONTROL_PREQUALIFICATION_RUNTIME
+PRIMARY_SCIENTIFIC_RUNTIME
+ORACLE_RUNTIME
+PRODUCTION_RUNTIME
+</code></pre>
+<p>Authorization is separate from certification:</p>
+<pre><code class="language-text">FROZEN_CERTIFIED ≠ RUNTIME_AUTHORIZED
+PASS_PREVIOUS_GATE ≠ PERMISSION_TO_RUN
+</code></pre>
+<p>Each consequential runtime requires a separate Gate with its own inputs, capabilities, evidence plan, terminal partition, and side-effect budget.</p>
+<h2 id="11-local-execution-adapter-and-least-privilege">11. Local execution adapter and least privilege</h2>
+<p>The qualified local adapter is currently represented as:</p>
+<pre><code class="language-text">Windows host
+    ↓
+WSL2 / Ubuntu 24.04.4 LTS
+    ↓
+/opt/mm
+    ├── input/      root-owned read-only
+    ├── review/     root-owned read-only
+    ├── output/     authorized A1 mutable surface
+    ├── scratch/    controlled execution state
+    └── toolchain/  root-owned immutable toolchain
+</code></pre>
+<p>Actors are separated:</p>
+<ul>
+<li><code>mmadmin</code> UID 1000 — administrative/bootstrap actor, not the scientific mutable actor;</li>
+<li><code>mm-a1</code> UID 1001 — sole mutable scientific actor, non-admin, no sudo/adm, zero effective/permitted/ambient capabilities in the qualified sandbox, <code>NoNewPrivs=1</code>;</li>
+<li><code>mm-review</code> UID 1003 — read-only independent reviewer role with restricted mutable surfaces.</li>
+</ul>
+<p>The qualified adapter record demonstrates OS/toolchain boundary properties but explicitly does <strong>not</strong> authorize scientific, GEE, publication, GitHub-write, or production runtime.</p>
+<h2 id="12-harness-reliability-profile">12. Harness reliability profile</h2>
+<p>Prospective mutable execution is constrained by the Harness Reliability Profile. Core controls include:</p>
+<ol>
+<li>one-shot execution (<code>MAX_ATTEMPTS=1</code>);</li>
+<li>no automatic retry;</li>
+<li>no implicit agent recursion or self-relaunch;</li>
+<li>typed process results;</li>
+<li>exact materialized-byte identity;</li>
+<li>observation before adjudication;</li>
+<li>total/exclusive terminal partition;</li>
+<li>resource bounds and descendant cleanup;</li>
+<li>filesystem least privilege;</li>
+<li>network least privilege;</li>
+<li>explicit UID/GID/capability boundary;</li>
+<li>numeric side-effect budgets;</li>
+<li>atomic evidence lifecycle;</li>
+<li>independent readback;</li>
+<li>explicit <code>STOP=true</code>;</li>
+<li>regression closure for each discovered harness defect.</li>
+</ol>
+<p>The Harness constrains execution but is not itself execution authority.</p>
+<h2 id="13-data-engineering-metadata-provenance-and-evidence">13. Data engineering, metadata, provenance, and evidence</h2>
+<h3 id="131-computational-contract-versus-catalog-metadata">13.1 Computational contract versus catalog metadata</h3>
+<p>The project separates:</p>
+<ul>
+<li>computational data contracts — exact interface semantics needed for execution;</li>
+<li>DCAT — dataset/service discovery;</li>
+<li>PROV-O — provenance/derivation relations;</li>
+<li>SHACL — graph constraint validation;</li>
+<li>DQV — data-quality metadata;</li>
+<li>Project Evidence Base — certified scientific/technical claims, decisions, conflicts, gaps, and evidence relations.</li>
+</ul>
+<p>These layers are complementary and not interchangeable.</p>
+<h3 id="132-data-quality-evidence">13.2 Data-quality evidence</h3>
+<p>A material dataset/transformation should have a quality profile that records:</p>
+<ul>
+<li>schema validity;</li>
+<li>units and ranges;</li>
+<li>missingness/null semantics;</li>
+<li>duplicate/key checks where relevant;</li>
+<li>spatial/temporal coverage;</li>
+<li>CRS/grid identity where relevant;</li>
+<li>provenance and source version;</li>
+<li>transformation lineage;</li>
+<li>freshness where material;</li>
+<li>required-versus-executed check equality.</li>
+</ul>
+<p>A declared <code>CERTIFIED</code> state without objective evidence is invalid.</p>
+<h3 id="133-evidence-base-evolution">13.3 Evidence Base evolution</h3>
+<p>The certified Project Evidence Base v1.0.0 is immutable and append-only in evolution. Its certified baseline retains one open conflict and nine open gaps; this methodology does not silently close them. New material evidence must be admitted prospectively through audited linkage.</p>
+<h2 id="14-geospatial-and-gee-assurance">14. Geospatial and GEE assurance</h2>
+<p>Spatial correctness requires more than a syntactically valid CRS identifier. Material geospatial operations must control, as applicable:</p>
+<ul>
+<li>CRS definition;</li>
+<li>coordinate operation/datum transformation;</li>
+<li>axis semantics;</li>
+<li>affine/grid transform;</li>
+<li>pixel origin/alignment;</li>
+<li>nominal resolution/scale;</li>
+<li>spatial extent and target support;</li>
+<li>observable support/mask;</li>
+<li>resampling/aggregation semantics;</li>
+<li>geodesic versus planar area conventions;</li>
+<li>task/export identity and receipt.</li>
+</ul>
+<p>A missing/non-observable value is not equivalent to a scientific zero. Empty support, partial support, and complete support are distinct states and should map to explicit terminal predicates.</p>
+<h2 id="15-mathematical-and-numerical-assurance">15. Mathematical and numerical assurance</h2>
+<p>For mathematical/numerical components, the development record should establish:</p>
+<ul>
+<li>well-posed problem and domain of validity;</li>
+<li>assumptions/regularity conditions;</li>
+<li>conditioning and sensitivity;</li>
+<li>algorithmic stability;</li>
+<li>finite-precision behavior;</li>
+<li>convergence criterion and stopping rule;</li>
+<li>justified tolerance/error bound linked to the scientific decision;</li>
+<li>comparison against analytical/trusted reference results where feasible;</li>
+<li>negative/boundary behavior;</li>
+<li>exact artifact identity.</li>
+</ul>
+<h2 id="16-statistical-geostatistical-monte-carlo-and-uq-assurance">16. Statistical, geostatistical, Monte Carlo, and UQ assurance</h2>
+<p>Material statistical work should specify before execution:</p>
+<ul>
+<li>sampling design;</li>
+<li>probability distributions and parameterization;</li>
+<li>truncation/bounds;</li>
+<li>dependence/correlation structure;</li>
+<li>random seed and independent stream strategy;</li>
+<li>convergence/precision target;</li>
+<li>estimator and sample-size design;</li>
+<li>validation design;</li>
+<li>spatial/temporal cross-validation that avoids leakage;</li>
+<li>uncertainty category being propagated or excluded;</li>
+<li>decision outputs and interpretation.</li>
+</ul>
+<p>Iteration count alone is not evidence of Monte Carlo adequacy; precision must be related to the scientific decision.</p>
+<h2 id="17-scientific-model-credibility">17. Scientific model credibility</h2>
+<p>NASA-HDBK-7009B is used by the project as a <strong>methodological evidence source</strong>, not as a claim of NASA compliance [EXT-NASA-HDBK7009B]. The project evidence overlay links it to:</p>
+<ul>
+<li>modular model/system decomposition;</li>
+<li>explicit interfaces and interactions among submodels;</li>
+<li>credibility of component and integrated models;</li>
+<li>input pedigree/provenance and data quality;</li>
+<li>uncertainty characterization;</li>
+<li>robustness of results;</li>
+<li>credibility considerations for AI-assisted modeling/simulation.</li>
+</ul>
+<p>For MM, model credibility is therefore evaluated at both component and integrated-system levels.</p>
+<h2 id="18-configuration-management-deterministic-packaging-and-exact-byte-authority">18. Configuration management, deterministic packaging, and exact-byte authority</h2>
+<h3 id="181-configuration-identity">18.1 Configuration identity</h3>
+<p>A scientific result must bind to exact identities for material code, data, configuration, model version, contracts, and external dependencies. File name or modification time alone is insufficient.</p>
+<h3 id="182-deterministic-packaging">18.2 Deterministic packaging</h3>
+<p>Where a package identity is itself evidence, the build process should define determinism rules such as path ordering, timestamp normalization, compression method, platform metadata, file modes, directory-entry behavior, and checksum coverage. When deterministic double-build is a requirement, both artifacts and their comparison must be independently inspectable.</p>
+<h3 id="183-readback">18.3 Readback</h3>
+<p>A release/freeze process does not trust local success alone. Persisted artifacts are re-read from the authority surface, reconstructed where necessary, and compared to frozen expected bytes/hashes. Mismatch means HOLD.</p>
+<h2 id="19-independent-review-mutation-testing-and-adversarial-assurance">19. Independent review, mutation testing, and adversarial assurance</h2>
+<p>Independent assurance is intended to challenge both the implementation and the specification/test system.</p>
+<h3 id="191-mutation-testing">19.1 Mutation testing</h3>
+<p>Mutation suites should target:</p>
+<ul>
+<li>canonical requirements/source;</li>
+<li>executable resolver or decision logic;</li>
+<li>referential/traceability bindings;</li>
+<li>schema/type invariants;</li>
+<li>compatibility constraints;</li>
+<li>authority hashes;</li>
+<li>negative paths and failure classifications.</li>
+</ul>
+<p>A candidate cannot pass if a material mutation that should be rejected remains undetected.</p>
+<h3 id="192-common-mode-protection">19.2 Common-mode protection</h3>
+<p>Where feasible, an independent oracle should be separately implemented rather than calling the production resolver. Independent review should recompute decisive facts from admitted bytes instead of accepting preparer receipts as dispositive evidence.</p>
+<h3 id="193-evidence-completeness-lesson-from-attempt004">19.3 Evidence-completeness lesson from Attempt004</h3>
+<p>The terminal Attempt004 lineage provides a methodological lesson without becoming a normative authority. Its final independent review reconstructed 45 checks: checks 1–44 passed in documentary/static scope, while check 45 held because the <strong>sealed negative-test matrix did not provide complete inspectable evidence for all mandatory negative classes</strong>. The finding explicitly did not establish a new runtime implementation failure or corrupted candidate bytes.</p>
+<p>The lesson is general:</p>
+<pre><code class="language-text">IMPLEMENTATION_GUARDS_APPEAR_CORRECT
+        does not imply
+MANDATORY_ASSURANCE_EVIDENCE_IS_COMPLETE
+</code></pre>
+<p>Therefore, when a Gate requires a negative matrix, the actual fixtures/test sources and their coverage are part of the deliverable—not optional supporting prose.</p>
+<h2 id="20-agent-control-execution-plane-implementation-roadmap">20. Agent Control / Execution Plane implementation roadmap</h2>
+<p>The M0→M8 roadmap is a <strong>reference implementation and qualification track</strong> for the Agent Control / Execution Plane. It is not the normative Architecture itself and does not block production of this methodological derivative.</p>
+<pre><code class="language-text">M0   Architecture Review
+ ↓
+M1   Always-on Core Extraction
+ ↓
+M2   Skill Package Materialization
+ ↓
+M3   Static Validation
+ ↓
+M4   Read-only Routing Evaluation
+ ↓
+M4A  Prospective Behavioral DOE
+ ↓
+M5   Supply-chain Discovery Qualification
+ ↓
+M6   Harness Integration
+ ↓
+M7   Controlled Mutable Pilot
+ ↓
+M8   Freeze / Certification Candidate
+</code></pre>
+<p>Current durable sources used here establish <code>M0=PASS_FINAL_ADJUDICATED</code> and <code>M1=PASS_M1_CORE_EXTRACTION</code>. Separate historical M4 evidence records a pre-model infrastructure HOLD and <code>M4_BEHAVIORAL_RESULT=NOT_ESTABLISHED</code>; a later M4R1 design review records an F03 causal-cycle HOLD. <strong>No status for an intermediate milestone is inferred merely because a later milestone was attempted.</strong> Each milestone's own controlling record remains authoritative for its state.</p>
+<p>This roadmap may continue independently from the Methodology publication workstream.</p>
+<h2 id="21-development-change-acceptance-matrix">21. Development-change acceptance matrix</h2>
+<p>Every material change should answer the following matrix before release.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Required question</th>
+<th>Typical objective evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scientific need</td>
+<td>Is the intended problem/use correct?</td>
+<td>problem statement, estimand, domain review</td>
+</tr>
+<tr>
+<td>Requirements</td>
+<td>Are requirements correct, complete, consistent, traceable, testable?</td>
+<td>requirement register, gap analysis, traceability</td>
+</tr>
+<tr>
+<td>Architecture</td>
+<td>Does architecture satisfy requirements and intended use?</td>
+<td>architecture mapping, interface review, failure analysis</td>
+</tr>
+<tr>
+<td>Design</td>
+<td>Is detailed design complete and analyzable?</td>
+<td>design spec, invariants, algorithm/numerical rationale</td>
+</tr>
+<tr>
+<td>Implementation</td>
+<td>Does code implement the approved design?</td>
+<td>source diff, static analysis, unit tests</td>
+</tr>
+<tr>
+<td>Interfaces</td>
+<td>Are contracts correct and version-compatible?</td>
+<td>schema/contract tests, negative fixtures</td>
+</tr>
+<tr>
+<td>Verification</td>
+<td>Was the product built correctly?</td>
+<td>requirement-linked tests/analyses</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>Was the right product built for intended use?</td>
+<td>benchmarks, empirical/reference comparisons, expert review</td>
+</tr>
+<tr>
+<td>Numerical/statistical</td>
+<td>Are error, convergence, dependence, and uncertainty controlled?</td>
+<td>diagnostics, precision/error evidence</td>
+</tr>
+<tr>
+<td>Data quality</td>
+<td>Are inputs and transformations fit for purpose?</td>
+<td>quality profile, provenance, validation</td>
+</tr>
+<tr>
+<td>Security/privilege</td>
+<td>Are capabilities and mutable surfaces bounded?</td>
+<td>sandbox preflight, actor/capability evidence</td>
+</tr>
+<tr>
+<td>Reproducibility</td>
+<td>Can exact state be reconstructed?</td>
+<td>versions, hashes, manifests, deterministic build/readback</td>
+</tr>
+<tr>
+<td>Assurance completeness</td>
+<td>Are required positive/negative/off-nominal tests present?</td>
+<td>coverage matrix, mutation/adversarial results</td>
+</tr>
+<tr>
+<td>Adjudication</td>
+<td>Does evidence map to exactly one terminal?</td>
+<td>mechanical partition/readback</td>
+</tr>
+</tbody>
+</table>
+<h2 id="22-claim-discipline-for-scientific-publications">22. Claim discipline for scientific publications</h2>
+<p>For manuscript-facing claims, the project should maintain a claim-to-evidence map. Every material claim should specify:</p>
+<ul>
+<li>claim text;</li>
+<li>scientific object and scope;</li>
+<li>supporting artifact(s);</li>
+<li>source/authority identity;</li>
+<li>verification evidence;</li>
+<li>validation evidence;</li>
+<li>uncertainty/limitations;</li>
+<li>independent review status;</li>
+<li>manuscript destination (main text, Methods, Supplementary, repository).</li>
+</ul>
+<p>Claims unsupported by an admitted source are omitted or explicitly labeled <code>NOT_ESTABLISHED</code>.</p>
+<h2 id="23-publication-facing-reproducibility-profile">23. Publication-facing reproducibility profile</h2>
+<p>This section is <strong>non-normative editorial guidance</strong>. It does not alter the certified MM authorities.</p>
+<h3 id="231-nature-computational-science-alignment">23.1 Nature Computational Science alignment</h3>
+<p>Nature Computational Science states that it publishes fundamental and applied work on computational techniques and mathematical models, including tools/frameworks that advance scientific research and methodologies that use computing in novel ways across scientific disciplines [EXT-NCS-AIMS]. This creates a plausible editorial scope for an MM paper centered on a reusable computational/scientific modeling framework, provided the manuscript demonstrates substantial conceptual or methodological significance rather than software engineering alone.</p>
+<p>The journal's policies state that research manuscripts with newly developed code central to the main claims may require a software submission checklist and code availability for peer-review evaluation [EXT-NCS-POLICY]. Nature Portfolio guidance also expects central custom code to be made available to editors/referees on request and encourages release that allows readers to repeat published results [EXT-NATURE-CODE].</p>
+<h3 id="232-computational-reproducibility">23.2 Computational reproducibility</h3>
+<p>Nature-family computational reporting guidance emphasizes, for custom scientific code:</p>
+<ul>
+<li>evidence supporting result validity, such as convergence tests or comparison with analytical/trusted standard approaches;</li>
+<li>code availability;</li>
+<li>installation/running documentation;</li>
+<li>tests and use examples;</li>
+<li>explicit software versions and input files where relevant [EXT-NATURE-COMP-REPRO].</li>
+</ul>
+<p>MM therefore treats documentation, version identity, testability, and result validation as publication-facing scientific evidence—not repository polish.</p>
+<h3 id="233-editorial-non-claim">23.3 Editorial non-claim</h3>
+<p>A high journal metric or apparent scope match does not establish publishability. Editorial acceptance depends on novelty, significance, evidence, clarity, reproducibility, and the final scientific story. The methodology is designed to maximize defensibility and reviewer auditability, not to guarantee a specific journal outcome.</p>
+<h2 id="24-two-article-role-of-this-methodology">24. Two-article role of this methodology</h2>
+<p>The current MM editorial strategy separates:</p>
+<ul>
+<li><strong>RAFE-1 / Data- or Resource-oriented paper:</strong> the MM/MHSMM scientific instrument, reusable computational representation, FAIR/provenance layer, reproducibility, certified Architecture/Manual, Gate model, assurance, readback, and release/reuse;</li>
+<li><strong>RAFE-2 / Research paper:</strong> substantive agricultural, economic, environmental, spatial, uncertainty, and land-use knowledge obtained from qualified scientific execution.</li>
+</ul>
+<p>This methodology is principally an RAFE-1 asset. RAFE-2 should describe only the assurance material necessary to establish credibility of its scientific results, avoiding duplication of the full infrastructure narrative.</p>
+<h2 id="25-resumption-of-scientific-development">25. Resumption of scientific development</h2>
+<p>The Methodology workstream and the Agent Control qualification workstream are distinct. Completion of this Markdown does not authorize primary scientific runtime, but it can serve as the controlled methodological baseline for renewed scientific development.</p>
+<p>A new scientific development Gate may authorize, as appropriate:</p>
+<ul>
+<li>scientific design and model specification;</li>
+<li>data-contract development;</li>
+<li>code development;</li>
+<li>static/local verification;</li>
+<li>baseline reproduction preparation;</li>
+<li>validation-design preparation;</li>
+<li>UQ/DOE design;</li>
+<li>DSSAT/MM integration development;</li>
+<li>documentation and test development.</li>
+</ul>
+<p>A consequential <strong>primary scientific runtime</strong> remains separately authorized under the Architecture and Manual, with Gate-specific requirements and execution-plane qualification.</p>
+<h2 id="26-known-limitations-and-unresolved-states">26. Known limitations and unresolved states</h2>
+<p>This document intentionally preserves the following non-claims:</p>
+<ol>
+<li>The certified Architecture and Manual do not automatically validate every future model, dataset, scenario, or runtime.</li>
+<li>The Project Evidence Base v1.0.0 retains one open conflict and nine open gaps at its certified baseline; this Markdown does not close them.</li>
+<li>The local execution adapter is qualified for defined boundary properties but does not itself authorize scientific runtime.</li>
+<li>The M0→M8 Agent Control implementation track is not fully certified; M4/M4R1 records include unresolved infrastructure/design HOLD states.</li>
+<li>Attempt004 is terminated/archived and is not reopened by this methodology.</li>
+<li>Internal multi-agent assurance is not represented as formal external IV&amp;V.</li>
+<li>Use of NASA, ISO/IEC/IEEE, NIST, W3C, FAIR4RS, or other external guidance does not imply external compliance or endorsement unless separately demonstrated.</li>
+<li>This Markdown is a controlled derivative candidate until its own source-lock/readback process is accepted.</li>
+</ol>
+<h2 id="27-methodology-document-acceptance-criteria">27. Methodology document acceptance criteria</h2>
+<p>This Markdown may be promoted from candidate to controlled methodological baseline only if all of the following pass:</p>
+<ul>
+<li>all controlling internal source identities are named;</li>
+<li>no certified authority is silently overridden;</li>
+<li>no historical HOLD is rewritten as PASS;</li>
+<li>no runtime authorization is inferred from certification;</li>
+<li>all quantitative project claims are source-backed;</li>
+<li>NASA verification/validation/IV&amp;V distinctions are represented accurately;</li>
+<li>external guidance is explicitly non-normative for MM;</li>
+<li>current implementation-roadmap states are not overclaimed;</li>
+<li>Nature-facing statements are sourced to official Nature Portfolio material;</li>
+<li>all links are syntactically valid;</li>
+<li>heading hierarchy is valid;</li>
+<li>duplicate anchors/headings that would impair navigation are absent or explicitly handled;</li>
+<li>source register contains every external and internal source used materially;</li>
+<li>exact output byte length and SHA-256 are recorded;</li>
+<li>an independent/read-only content readback is performed before publication;</li>
+<li><code>PUBLICATION_AUTHORIZED=false</code> remains true unless a separate publication Gate changes it;</li>
+<li><code>SCIENTIFIC_RUNTIME_AUTHORIZED=false</code> remains true unless a separate run Gate changes it.</li>
+</ul>
+<h2 id="28-mkdocs-implementation-profile">28. MkDocs implementation profile</h2>
+<p>The Markdown is authored to remain readable as plain text and render cleanly in MkDocs. The accompanying starter configuration follows the official MkDocs custom-theme model: a custom theme uses a <code>main.html</code> Jinja2 template outside <code>docs_dir</code>, referenced by <code>theme.custom_dir</code> in <code>mkdocs.yml</code> [EXT-MKDOCS-THEMES].</p>
+<p>The documentation theme is a presentation layer only:</p>
+<pre><code class="language-text">CERTIFIED AUTHORITY
+      ↓
+CONTROLLED METHODOLOGICAL SOURCE
+      ↓
+INTEGRAL VERSIONED MARKDOWN
+      ↓
+MKDOCS RENDERING
+      ↓
+HUMAN-READABLE SITE
+</code></pre>
+<pre><code class="language-text">HUMAN-READABLE SITE ≠ SCIENTIFIC AUTHORITY
+</code></pre>
+<p>No GitHub Pages deployment is authorized by this artifact.</p>
+<h2 id="29-operating-checklist-for-future-mm-development-gates">29. Operating checklist for future MM development Gates</h2>
+<p>Before any material development Gate:</p>
+<ol>
+<li>Name the Gate and exact parent authority.</li>
+<li>State the scientific question and intended use.</li>
+<li>Identify affected modules and interfaces.</li>
+<li>Classify materiality and risks.</li>
+<li>Select A0, A1, and only necessary read-only reviewers/SMEs.</li>
+<li>Lock exact source/data/configuration authorities.</li>
+<li>Build the requirement and traceability plan.</li>
+<li>Define verification <strong>and</strong> validation plans.</li>
+<li>Define controls, negative fixtures, off-nominal cases, and acceptance criteria before candidate observation.</li>
+<li>Prove terminal-state totality and exclusivity.</li>
+<li>Prequalify capabilities and side-effect boundaries.</li>
+<li>Execute only within the authorized budget.</li>
+<li>Capture raw evidence before adjudication.</li>
+<li>Perform independent readback/oracle/adversarial checks.</li>
+<li>Adjudicate PASS/HOLD without partial-language ambiguity.</li>
+<li>Freeze only after zero-mismatch readback.</li>
+<li>Preserve historical failures; remediate prospectively.</li>
+<li>End with an explicit <code>NEXT_ALLOWED</code> and <code>STOP=true</code>.</li>
+</ol>
+<h2 id="30-references-and-source-authority">30. References and source authority</h2>
+<h3 id="301-internal-controlling-and-explanatory-sources">30.1 Internal controlling and explanatory sources</h3>
+<ul>
+<li><strong>[MM-CR08]</strong> <code>MM_CR08_ARCHITECTURE_AUTHORITY_AND_DECISION_LEDGER_v1.0.0</code> — certified Architecture authority and decision ledger.</li>
+<li><strong>[MM-CR07]</strong> <code>MM_CR07_MANUAL_AUTHORITY_AND_ASSURANCE_v1.0.0</code> — certified Manual authority and assurance state.</li>
+<li><strong>[MM-CR12]</strong> <code>MM_CR12_PROJECT_EVIDENCE_BASE_AUTHORITY_v1.0.0</code> — certified Evidence Base authority.</li>
+<li><strong>[MM-CR13]</strong> <code>MM_CR13_ARCHITECTURE_EVIDENCE_OVERLAY_PROVENANCE_v1.0.0</code> — NASA-HDBK-7009B evidence overlay and provenance.</li>
+<li><strong>[MM-CR04]</strong> <code>MM_CR04_MM_LOCAL_EXECUTION_ADAPTER_QUALIFICATION_v1.0.0</code> — qualified local adapter boundary; no runtime authorization.</li>
+<li><strong>[MM-HRP]</strong> <code>MM_HARNESS_RELIABILITY_PROFILE_v1.0.0</code> — prospective harness reliability profile.</li>
+<li><strong>[MM-CR06]</strong> <code>MM_CR06_TECHNICAL_REFERENCE_PUBLICATION_STATE_v1.0.0</code> — controlled publication state and Markdown/MkDocs architecture.</li>
+<li><strong>[MM-TDR]</strong> <code>MM_CERTIFIED_INFRASTRUCTURE_ARCHITECTURE_AND_MANUAL_TECHNICAL_REFERENCE_v1.0.0.docx</code> — controlled explanatory derivative, document <code>MM-TDR-INFRA-ARCH-MANUAL-001</code>; not normative.</li>
+<li><strong>[MM-CR17]</strong> <code>MM_CR17_AGENT_CONTROL_M1_ALWAYS_ON_CORE_EXTRACTION_AND_M2_HANDOFF_v1.0.0</code> — M0/M1 durable Agent Control state.</li>
+<li><strong>[MM-M4]</strong> <code>M4_INDEPENDENT_READBACK_REPORT</code> — historical M4 pre-model infrastructure HOLD/readback state.</li>
+<li><strong>[MM-M4R1]</strong> <code>MM_AGENT_CONTROL_M4R1_V1_0_2_INDEPENDENT_F03_DESIGN_REVIEW_HOLD_v1.0.0</code> — M4R1 F03 design HOLD.</li>
+<li><strong>[MM-A004]</strong> final Attempt004 v1.0.4 independent review and terminal archival state — historical assurance lesson only; not normative.</li>
+<li><strong>[MM-RAFE]</strong> <code>MM_RAFE_TWO_ARTICLE_EDITORIAL_STRATEGY_v1.0.0</code> — RAFE-1/RAFE-2 allocation strategy.</li>
+<li><strong>[MM-PSP]</strong> <code>MM_PROJECT_SOURCE_ADMISSION_POLICY_v1.0.0</code> — Project Source admission/retention policy.</li>
+</ul>
+<h3 id="302-external-methodological-and-reporting-sources">30.2 External methodological and reporting sources</h3>
+<ul>
+<li><strong>[EXT-NASA-NPR7150]</strong> NASA. <em>NPR 7150.2D — NASA Software Engineering Requirements</em>. https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_7150_002D_</li>
+<li><strong>[EXT-NASA-HDBK7009B]</strong> NASA. <em>NASA-HDBK-7009, Version B — NASA Handbook for Models and Simulations: An Implementation Guide for NASA-STD-7009B</em>. NASA Technical Standards System, 2026-02-03. https://standards.nasa.gov/standard/NASA/NASA-HDBK-7009</li>
+<li><strong>[EXT-NASA-SA]</strong> NASA. <em>NASA Software Assurance and Software Safety Standard / software assurance resources</em>. https://www.nasa.gov/intelligent-systems-division/software-management-office/nasa-software-engineering-procedural-requirements-standards-and-related-resources/</li>
+<li><strong>[EXT-NASA-SWE067]</strong> NASA Software Engineering Handbook. <em>SWE-067 — Verify Implementation</em>. https://swehb.nasa.gov/spaces/7150/pages/16450546/SWE-067+-+Verify+Implementation</li>
+<li><strong>[EXT-NASA-IVV]</strong> NASA Software Engineering Handbook / NASA-STD-8739.8. <em>IV&amp;V Requirements</em>. https://swehb.nasa.gov/spaces/SITE/pages/122388487/8739.8B+4.4.2+IV+V+Requirements</li>
+<li><strong>[EXT-NASA-IVV-REQ]</strong> NASA Software Assurance guidance. Requirements/design IV&amp;V properties including correctness, consistency, completeness, traceability, and testability. https://swehb.nasa.gov/spaces/SITE/pages/129991998/8739.8A+Ch+4+SOFTWARE+ASSURANCE+AND+SOFTWARE+SAFETY+REQUIREMENTS</li>
+<li><strong>[EXT-MKDOCS-THEMES]</strong> MkDocs. <em>Developing Themes / Creating a custom theme</em>. https://www.mkdocs.org/dev-guide/themes/</li>
+<li><strong>[EXT-NCS-AIMS]</strong> Nature Computational Science. <em>Aims &amp; Scope</em>. https://www.nature.com/natcomputsci/about/aims</li>
+<li><strong>[EXT-NCS-POLICY]</strong> Nature Computational Science. <em>Editorial Policies</em>. https://www.nature.com/natcomputsci/editorial-policies</li>
+<li><strong>[EXT-NATURE-CODE]</strong> Nature Portfolio. <em>Initial submission — Computer code</em>. https://www.nature.com/nature/for-authors/initial-submission</li>
+<li><strong>[EXT-NATURE-COMP-REPRO]</strong> Nature Communications. <em>Guidance on reproducibility for papers using computational tools</em>. https://www.nature.com/documents/Computational_tools_reporting_guidelines.pdf</li>
+<li><strong>[EXT-NATURE-METRICS]</strong> Nature Portfolio. <em>Journal Metrics</em>. https://www.nature.com/nature-portfolio/about-journals/journal-metrics</li>
+</ul>
+<h3 id="303-external-source-use-statement">30.3 External-source use statement</h3>
+<p>External standards and journal guidance inform rationale and publication-facing controls. They do not replace the MM certified authorities. Where an external source changes over time, the access date/version must be recorded prospectively before a future normative change is proposed.</p>
+<hr />
+<h2 id="terminal-document-state">Terminal document state</h2>
+<pre><code class="language-text">DOCUMENT=MM_SCIENTIFIC_SOFTWARE_DEVELOPMENT_METHODOLOGY_v1.0.1.md
+DOCUMENT_CLASS=CONTROLLED_HUMAN_READABLE_METHODOLOGICAL_DERIVATIVE
+NORMATIVE_AUTHORITY=false
+CERTIFIED_ARCHITECTURE_CHANGED=false
+CERTIFIED_MANUAL_CHANGED=false
+PROJECT_EVIDENCE_BASE_CHANGED=false
+ATTEMPT004_REOPENED=false
+M0_TO_M8_STATUS_REWRITTEN=false
+SCIENTIFIC_RUNTIME_AUTHORIZED=false
+GEE_RUNTIME_AUTHORIZED=false
+PRODUCTION_RUNTIME_AUTHORIZED=false
+PUBLICATION_AUTHORIZED=false
+NEXT_ALLOWED=SEPARATELY_QUALIFIED_TARGETED_INDEPENDENT_READBACK_OF_MM_METHODOLOGY_V1_0_1_FINDINGS_CLOSURE
+STOP=true
+</code></pre>
+</main>
+  </div>
+  <footer class="site-footer"><div class="wrap">MM methodology v1.0.1 · controlled human-readable derivative.</div></footer>
+  
+</body>
+</html>
