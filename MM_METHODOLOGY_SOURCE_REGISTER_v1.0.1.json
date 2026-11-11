@@ -1,0 +1,224 @@
+{
+  "artifact": "MM_METHODOLOGY_SOURCE_REGISTER_v1.0.1",
+  "date": "2026-11-11",
+  "exclusions_and_boundaries": [
+    "No NASA compliance/endorsement claim.",
+    "No Nature journal acceptance or fit guarantee.",
+    "No runtime authorization derived from Architecture/Manual certification.",
+    "No Attempt004 reopening or successor versioning.",
+    "No silent closure of Evidence Base conflict/gaps.",
+    "No inference of intermediate M0-M8 milestone status without its own controlling record."
+  ],
+  "external_sources": [
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NASA-NPR7150",
+      "normative_for_mm": false,
+      "publisher": "NASA",
+      "title": "NPR 7150.2D \u2014 NASA Software Engineering Requirements",
+      "url": "https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_7150_002D_",
+      "use": "software lifecycle, V&V, traceability, assurance context"
+    },
+    {
+      "accessed": "2026-11-11",
+      "document_date": "2026-02-03",
+      "document_number": "NASA-HDBK-7009",
+      "id": "EXT-NASA-HDBK7009B",
+      "normative_for_mm": false,
+      "publisher": "NASA",
+      "title": "NASA HANDBOOK FOR MODELS AND SIMULATIONS: AN IMPLEMENTATION GUIDE FOR NASA-STD-7009B",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-HDBK-7009",
+      "use": "model/simulation credibility and the evidence relationships already preserved by MM-CR13",
+      "version": "B"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NASA-SA",
+      "normative_for_mm": false,
+      "publisher": "NASA",
+      "title": "Software Engineering Procedural Requirements, Standards, and Related Resources",
+      "url": "https://www.nasa.gov/intelligent-systems-division/software-management-office/nasa-software-engineering-procedural-requirements-standards-and-related-resources/",
+      "use": "NASA-STD-8739.8 and software assurance/IV&V context"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NASA-SWE067",
+      "normative_for_mm": false,
+      "publisher": "NASA SWEHB",
+      "title": "SWE-067 \u2014 Verify Implementation",
+      "url": "https://swehb.nasa.gov/spaces/7150/pages/16450546/SWE-067+-+Verify+Implementation",
+      "use": "verification versus validation distinction"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NASA-IVV",
+      "normative_for_mm": false,
+      "publisher": "NASA SWEHB",
+      "title": "NASA-STD-8739.8B 4.4.2 IV&V Requirements",
+      "url": "https://swehb.nasa.gov/spaces/SITE/pages/122388487/8739.8B+4.4.2+IV+V+Requirements",
+      "use": "risk-driven IV&V and independent analysis"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NASA-IVV-REQ",
+      "normative_for_mm": false,
+      "publisher": "NASA SWEHB",
+      "title": "Software Assurance and Software Safety requirements",
+      "url": "https://swehb.nasa.gov/spaces/SITE/pages/129991998/8739.8A+Ch+4+SOFTWARE+ASSURANCE+AND+SOFTWARE+SAFETY+REQUIREMENTS",
+      "use": "requirements/design correctness, completeness, consistency, traceability, testability"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-MKDOCS-THEMES",
+      "normative_for_mm": false,
+      "publisher": "MkDocs",
+      "title": "Developing Themes",
+      "url": "https://www.mkdocs.org/dev-guide/themes/",
+      "use": "custom theme structure"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NCS-AIMS",
+      "normative_for_mm": false,
+      "publisher": "Nature Portfolio",
+      "title": "Nature Computational Science \u2014 Aims & Scope",
+      "url": "https://www.nature.com/natcomputsci/about/aims",
+      "use": "editorial scope context"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NCS-POLICY",
+      "normative_for_mm": false,
+      "publisher": "Nature Portfolio",
+      "title": "Nature Computational Science \u2014 Editorial Policies",
+      "url": "https://www.nature.com/natcomputsci/editorial-policies",
+      "use": "software checklist/code review expectations"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NATURE-CODE",
+      "normative_for_mm": false,
+      "publisher": "Nature Portfolio",
+      "title": "Initial submission \u2014 Computer code",
+      "url": "https://www.nature.com/nature/for-authors/initial-submission",
+      "use": "code availability and peer-review availability"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NATURE-COMP-REPRO",
+      "normative_for_mm": false,
+      "publisher": "Nature Communications",
+      "title": "Guidance on reproducibility for papers using computational tools",
+      "url": "https://www.nature.com/documents/Computational_tools_reporting_guidelines.pdf",
+      "use": "validation, code availability, documentation, tests, versions and inputs"
+    },
+    {
+      "accessed": "2026-11-10",
+      "id": "EXT-NATURE-METRICS",
+      "normative_for_mm": false,
+      "publisher": "Nature Portfolio",
+      "title": "Journal Metrics",
+      "url": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+      "use": "editorial context only; not a methodology acceptance criterion"
+    }
+  ],
+  "internal_sources": [
+    {
+      "certified_pin": "75da6a6a1006c445eff4d589396813d6429fc51e",
+      "id": "MM-CR08",
+      "normative": true,
+      "role": "CANONICAL_ARCHITECTURE_AUTHORITY",
+      "title": "MM_CR08_ARCHITECTURE_AUTHORITY_AND_DECISION_LEDGER_v1.0.0"
+    },
+    {
+      "certified_pin": "01e9a94a7909af9436443ad016e5df06302576b4",
+      "id": "MM-CR07",
+      "normative": true,
+      "role": "CANONICAL_MANUAL_AUTHORITY",
+      "title": "MM_CR07_MANUAL_AUTHORITY_AND_ASSURANCE_v1.0.0"
+    },
+    {
+      "certified_pin": "650dd2cc8a8b04e993309485fe4f72b07858dfa6",
+      "id": "MM-CR12",
+      "normative": true,
+      "role": "CANONICAL_EVIDENCE_BASE_AUTHORITY",
+      "title": "MM_CR12_PROJECT_EVIDENCE_BASE_AUTHORITY_v1.0.0"
+    },
+    {
+      "id": "MM-CR13",
+      "normative": false,
+      "role": "EVIDENCE_PROVENANCE_OVERLAY",
+      "title": "MM_CR13_ARCHITECTURE_EVIDENCE_OVERLAY_PROVENANCE_v1.0.0"
+    },
+    {
+      "id": "MM-CR04",
+      "normative": false,
+      "role": "QUALIFIED_EXECUTION_ADAPTER_RECORD",
+      "title": "MM_CR04_MM_LOCAL_EXECUTION_ADAPTER_QUALIFICATION_v1.0.0"
+    },
+    {
+      "id": "MM-HRP",
+      "normative": true,
+      "role": "MANDATORY_PROSPECTIVE_HARNESS_PROFILE",
+      "title": "MM_HARNESS_RELIABILITY_PROFILE_v1.0.0"
+    },
+    {
+      "id": "MM-CR06",
+      "normative": false,
+      "role": "CONTROLLED_PUBLICATION_STATE",
+      "title": "MM_CR06_TECHNICAL_REFERENCE_PUBLICATION_STATE_v1.0.0"
+    },
+    {
+      "access_basis": "indexed/extracted Project Library text; raw-byte materialization unavailable in this session",
+      "document_id": "MM-TDR-INFRA-ARCH-MANUAL-001",
+      "id": "MM-TDR",
+      "normative": false,
+      "raw_bytes_materialized": false,
+      "role": "CONTROLLED_EXPLANATORY_DERIVATIVE",
+      "title": "MM_CERTIFIED_INFRASTRUCTURE_ARCHITECTURE_AND_MANUAL_TECHNICAL_REFERENCE_v1.0.0.docx"
+    },
+    {
+      "id": "MM-CR17",
+      "normative": false,
+      "role": "AGENT_CONTROL_ACTIVE_STATE",
+      "title": "MM_CR17_AGENT_CONTROL_M1_ALWAYS_ON_CORE_EXTRACTION_AND_M2_HANDOFF_v1.0.0"
+    },
+    {
+      "id": "MM-M4",
+      "normative": false,
+      "role": "HISTORICAL_AGENT_CONTROL_READBACK",
+      "title": "M4_INDEPENDENT_READBACK_REPORT"
+    },
+    {
+      "id": "MM-M4R1",
+      "normative": false,
+      "role": "ACTIVE/HISTORICAL_DESIGN_HOLD",
+      "title": "MM_AGENT_CONTROL_M4R1_V1_0_2_INDEPENDENT_F03_DESIGN_REVIEW_HOLD_v1.0.0"
+    },
+    {
+      "id": "MM-A004",
+      "normative": false,
+      "role": "HISTORICAL_ASSURANCE_CASE",
+      "title": "Attempt004 final v1.0.4 independent review + terminal archive"
+    },
+    {
+      "id": "MM-RAFE",
+      "normative": false,
+      "role": "EDITORIAL_STRATEGY",
+      "title": "MM_RAFE_TWO_ARTICLE_EDITORIAL_STRATEGY_v1.0.0"
+    },
+    {
+      "id": "MM-PSP",
+      "normative": true,
+      "role": "CANONICAL_PROJECT_SOURCE_POLICY",
+      "title": "MM_PROJECT_SOURCE_ADMISSION_POLICY_v1.0.0"
+    }
+  ],
+  "methodology_document": {
+    "bytes": 45767,
+    "file": "MM_SCIENTIFIC_SOFTWARE_DEVELOPMENT_METHODOLOGY_v1.0.1.md",
+    "sha256": "5555e8e54231ceb76ed714cc69c6bacb7f790161393e8950e7397c5b100379bb"
+  },
+  "project": "Artigo 2 - MM",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+site_name: "MM Scientific Software Development Methodology"
+site_description: "Controlled methodological derivative for the Module Minimum (MM) scientific software system"
+site_author: "Module Minimum (MM) project"
+docs_dir: docs
+strict: true
+nav:
+  - Methodology: index.md
+theme:
+  name: null
+  custom_dir: custom_theme
+plugins: []
+markdown_extensions:
+  - tables
+  - fenced_code
+  - toc:
+      permalink: true
+extra_css:
+  - assets/mm.css
+extra:
+  methodology_version: "1.0.1"
+  normative_authority: false
+  runtime_authority: false
