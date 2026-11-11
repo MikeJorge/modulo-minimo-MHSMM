@@ -1,0 +1,109 @@
+{
+  "record_type": "MM_DEVELOPMENT_ARCHITECTURE_FIGURE_LOCAL_QA",
+  "schema_version": "1.0.2",
+  "project": "Artigo 2 - MM",
+  "date": "2026-11-11",
+  "operation": "EXECUTE_SENIOR_EDITORIAL_ACCESSIBLE_COLOUR_ENHANCEMENT_MM_DEVELOPMENT_ARCHITECTURE_FIGURE_V1_0_2",
+  "result": "PASS_LOCAL_ACCESSIBLE_COLOUR_EDITORIAL_CANDIDATE_PRE_INDEPENDENT_READBACK",
+  "parent_figure_version": "1.0.1",
+  "generator": {
+    "file": "MM_DEVELOPMENT_ARCHITECTURE_FIGURE_v1.0.2.py",
+    "bytes": 21947,
+    "sha256": "aea1c5579875cb51e715ab77ddc29c85a83b094284236fe0066cf59ec06fea96",
+    "generative_ai_image_used": false
+  },
+  "deterministic_double_render": {
+    "mm-development-architecture-v1.0.2.svg": {
+      "a_bytes": 48532,
+      "b_bytes": 48532,
+      "a_sha256": "579a429f08120dafd94a81d2c3f34122eb3e23bfc18e3eb9cd7b1481e7e94a27",
+      "b_sha256": "579a429f08120dafd94a81d2c3f34122eb3e23bfc18e3eb9cd7b1481e7e94a27",
+      "byte_equal": true,
+      "canonical_equal_a": true
+    },
+    "mm-development-architecture-v1.0.2.pdf": {
+      "a_bytes": 9160,
+      "b_bytes": 9160,
+      "a_sha256": "c4e03435d2217c4e63513b9ca968f5076d730c8cfa4c19c141d3e5b37f322bcc",
+      "b_sha256": "c4e03435d2217c4e63513b9ca968f5076d730c8cfa4c19c141d3e5b37f322bcc",
+      "byte_equal": true,
+      "canonical_equal_a": true
+    },
+    "mm-development-architecture-v1.0.2.png": {
+      "a_bytes": 494582,
+      "b_bytes": 494582,
+      "a_sha256": "906d0d596695d1598ff5b877966664083934d06aa6804fad58c53e3bdd6ae784",
+      "b_sha256": "906d0d596695d1598ff5b877966664083934d06aa6804fad58c53e3bdd6ae784",
+      "byte_equal": true,
+      "canonical_equal_a": true
+    }
+  },
+  "nature_alignment": {
+    "width_mm": 179.9999998333333,
+    "height_mm": 164.99999984722223,
+    "font_sizes_pt": [
+      5.0,
+      5.05,
+      5.1,
+      5.15,
+      5.2,
+      5.25,
+      5.4,
+      5.5,
+      6.3,
+      6.6,
+      6.8
+    ],
+    "svg_text_elements": 89,
+    "svg_image_elements": 0,
+    "png_pixels": [
+      2125,
+      1948
+    ],
+    "png_dpi": [
+      299.9994,
+      299.9994
+    ],
+    "pdf_page_size_pt": [
+      510.236,
+      467.717
+    ],
+    "pdf_text_extractable": true
+  },
+  "editorial_colour": {
+    "profile_file": "MM_DEVELOPMENT_ARCHITECTURE_FIGURE_ACCESSIBLE_COLOR_PROFILE_v1.0.2.md",
+    "profile_sha256": "84749fa2d2d42d4f57435aad42e238405cf8d36f740e50ce71d27f29a0043244",
+    "black_text_minimum_contrast_ratio": 16.5918644967066,
+    "contrast_pass_4_5": true,
+    "red_green_semantic_dependence": false,
+    "rainbow_scale": false,
+    "colour_only_encoding": false,
+    "grayscale_preview_file": "MM_DEVELOPMENT_ARCHITECTURE_FIGURE_v1.0.2_GRAYSCALE_QA.png",
+    "grayscale_preview_sha256": "58baba4f45d5182f68016ff640e5ae20499c79cb2ef5cbf225eecf139b7cf667",
+    "grayscale_control_chat_visual_assessment": "PASS"
+  },
+  "non_regression_vs_v1_0_1": {
+    "svg_path_geometry_equal": true,
+    "svg_path_count_equal": true,
+    "svg_text_count_equal": true,
+    "svg_semantic_text_equal_except_figure_version": true,
+    "canvas_geometry_equal": true,
+    "font_size_set_equal": true,
+    "F01_F02_F03_geometry_semantics_preserved": true
+  },
+  "control_chat_visual_qa": {
+    "colour_candidate_reviewed": true,
+    "grayscale_candidate_reviewed": true,
+    "hierarchy_improved": true,
+    "no_colour_dependent_semantics": true,
+    "no_visible_clipping_or_overlap": true,
+    "figure_remains_professional_and_non_decorative": true,
+    "non_dispositive": true
+  },
+  "mkdocs_insertion_authorized": false,
+  "github_pages_activation_authorized": false,
+  "publication_submission_authorized": false,
+  "scientific_runtime_authorized": false,
+  "next_allowed": "SEPARATELY_QUALIFIED_TARGETED_VISUAL_READBACK_OF_MM_DEVELOPMENT_ARCHITECTURE_FIGURE_V1_0_2_ACCESSIBLE_COLOR_NCS_ALIGNMENT",
+  "stop": true
+}
