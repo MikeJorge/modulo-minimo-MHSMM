@@ -1,0 +1,307 @@
+{
+  "record_type": "MM_DEVELOPMENT_ARCHITECTURE_FIGURE_INDEPENDENT_VISUAL_READBACK_RESULT",
+  "schema_version": "1.0.0",
+  "review_date": "2026-11-11",
+  "project": "Artigo 2 - MM",
+  "gate": "SEPARATELY_QUALIFIED_TARGETED_VISUAL_READBACK_OF_MM_DEVELOPMENT_ARCHITECTURE_FIGURE_V1_0_2_ACCESSIBLE_COLOR_NCS_ALIGNMENT",
+  "review_mode": "independent_read_only_documentary_and_visual",
+  "input_outer_package": {
+    "file": "MM_DEVELOPMENT_ARCHITECTURE_FIGURE_V1_0_2_ACCESSIBLE_COLOR_NCS_INDEPENDENT_READBACK_HANDOFF(1).zip",
+    "bytes": 1596094,
+    "sha256": "abf4ca88128e37f3063acfbc0371a6c60a07d3e2997123f88f256a073ac0f069"
+  },
+  "package_admission": {
+    "crc": "PASS",
+    "member_count": 25,
+    "manifest_payloads": "23_OF_23_PASS",
+    "sha256sums": "23_OF_23_PASS",
+    "paths": "SAFE_UNIQUE_REGULAR"
+  },
+  "required_checks": 36,
+  "passed_checks": 36,
+  "hold_checks": [],
+  "material_findings": [],
+  "material_finding_count": 0,
+  "checks": [
+    {
+      "id": "C01",
+      "name": "Outer admission, CRC, safe paths and cryptographic coverage",
+      "result": "PASS",
+      "evidence": "25 ZIP members, CRC PASS; 23/23 payloads match exact manifest bytes/SHA-256 and 23/23 checksum entries; no traversal, duplicates, non-regular members."
+    },
+    {
+      "id": "C02",
+      "name": "Deterministic non-generative source",
+      "result": "PASS",
+      "evidence": "AST/source inspection: standard library + Matplotlib only, three savefig operations, SVG/PDF/PNG; no image-generation AI, external service, network/import invocation or model execution evidenced."
+    },
+    {
+      "id": "C03",
+      "name": "Recorded double-render identity and delivered binding",
+      "result": "PASS",
+      "evidence": "Local QA records equal A/B SHA-256 and byte counts for SVG/PDF/PNG; independent hash and size readback of each delivered binary matches both recorded A and B identities. See evidentiary limitation below."
+    },
+    {
+      "id": "C04",
+      "name": "180 x 165 mm geometry / <=170 mm height",
+      "result": "PASS",
+      "evidence": "SVG dimensions 510.23622 x 467.716535 pt = 180.0000 x 165.0000 mm; PDF page same physical size."
+    },
+    {
+      "id": "C05",
+      "name": "Final-size 5–7 pt labels",
+      "result": "PASS",
+      "evidence": "Rendered SVG/PDF visible text sizes 5.0, 5.05, 5.1, 5.15, 5.2, 5.25, 5.5, 6.3, 6.6 and 6.8 pt; no visible text below 5 or above 7 pt."
+    },
+    {
+      "id": "C06",
+      "name": "Editable SVG and safe font stack",
+      "result": "PASS",
+      "evidence": "89 SVG <text> elements; zero <image>; font family Arial, Helvetica, sans-serif; no text-to-path or linked raster."
+    },
+    {
+      "id": "C07",
+      "name": "Single-page vector PDF, legible text",
+      "result": "PASS",
+      "evidence": "1 PDF page; 83 vector drawing objects; zero embedded raster images; 89 selectable Helvetica/Helvetica-Bold spans; extractable material text."
+    },
+    {
+      "id": "C08",
+      "name": "Approximate 300 dpi PNG",
+      "result": "PASS",
+      "evidence": "2125 x 1948 pixels, (299.9994,299.9994) dpi metadata, RGBA with fully opaque alpha."
+    },
+    {
+      "id": "C09",
+      "name": "F01 module connection topology",
+      "result": "PASS",
+      "evidence": "Source and visual inspection: single horizontal module-region connection at entry coordinate of MODULE OUTPUT only; no mid-chain bypass."
+    },
+    {
+      "id": "C10",
+      "name": "Complete interface chain",
+      "result": "PASS",
+      "evidence": "Six labeled nodes in order; five vertical connecting arrows: MODULE OUTPUT -> VERSIONED DATA CONTRACT -> CATALOG RECORD -> PROVENANCE / EVIDENCE BINDING -> INTEGRATION ADAPTER -> CONSUMER MODULE."
+    },
+    {
+      "id": "C11",
+      "name": "F02 separation from runtime boundary",
+      "result": "PASS",
+      "evidence": "Independent MM assurance != formal external IV&V inside the lower-right assurance area, visually separated by whitespace from the bottom runtime band."
+    },
+    {
+      "id": "C12",
+      "name": "Certification is not authorization",
+      "result": "PASS",
+      "evidence": "Explicit FROZEN / CERTIFIED != RUNTIME AUTHORIZED; five runtime class labels shown without authorized status."
+    },
+    {
+      "id": "C13",
+      "name": "F03 publication-size layout and clipping",
+      "result": "PASS",
+      "evidence": "Direct final-size PNG/color and grayscale inspected; no material overlap/clipping discernible. PDF text spans do not extend beyond page boundaries."
+    },
+    {
+      "id": "C14",
+      "name": "Superior authorities",
+      "result": "PASS",
+      "evidence": "Three correctly named superior authorities: Architecture v1.0.2, Manual v1.0.1 RC3, Project Evidence Base v1.0.0."
+    },
+    {
+      "id": "C15",
+      "name": "Non-normative Methodology",
+      "result": "PASS",
+      "evidence": "Controlled Methodology v1.0.1 explicitly marked human-readable and non-normative; no supersession claim."
+    },
+    {
+      "id": "C16",
+      "name": "Four-plane certified execution-control core",
+      "result": "PASS",
+      "evidence": "CONTROL, EXECUTION, AUTHORITY and EVIDENCE/PROVENANCE planes retained with distinct headings."
+    },
+    {
+      "id": "C17",
+      "name": "Cross-cutting Data/Catalog layer",
+      "result": "PASS",
+      "evidence": "DATA / CATALOG GOVERNANCE is an independently dashed cross-cutting layer, not a fifth certified plane."
+    },
+    {
+      "id": "C18",
+      "name": "Six bounded modules",
+      "result": "PASS",
+      "evidence": "MM-ENVIRONMENT; MM-PLANT; MM-ANIMAL; MM-ECONOMIC; MM-INTEGRATION-CORE; MM-DATA-CATALOG, plus boundary rule."
+    },
+    {
+      "id": "C19",
+      "name": "Nine stages / eight Gates",
+      "result": "PASS",
+      "evidence": "Nine numbered scientific development stages, 1 through 9; eight labeled, directed Gate transitions in serpentine order."
+    },
+    {
+      "id": "C20",
+      "name": "Verification distinct from validation",
+      "result": "PASS",
+      "evidence": "Separate definitions and boxes: building system correctly vs correct system for intended scientific use."
+    },
+    {
+      "id": "C21",
+      "name": "Historical WSL2 adapter inset",
+      "result": "PASS",
+      "evidence": "Dotted local adapter inset explicitly says historical view; Windows -> WSL2 -> /opt/mm and adapter != architecture."
+    },
+    {
+      "id": "C22",
+      "name": "Parent SVG geometry identical",
+      "result": "PASS",
+      "evidence": "v1.0.1 and v1.0.2 have 83/83 exactly identical SVG path d values; all other non-colour structural attributes and clip geometry identical after normalizing clip IDs."
+    },
+    {
+      "id": "C23",
+      "name": "Parent scientific text invariant",
+      "result": "PASS",
+      "evidence": "89/89 SVG text elements preserve position/style; only two figure-version identifiers changed from v1.0.1 to v1.0.2. PDF extracted lines independently agree."
+    },
+    {
+      "id": "C24",
+      "name": "Canvas and visible typography invariant",
+      "result": "PASS",
+      "evidence": "Parent and candidate SVG width/height/viewBox identical; 89 text styles, per-text transforms and visible font-size sets identical."
+    },
+    {
+      "id": "C25",
+      "name": "Colour redundant to semantics",
+      "result": "PASS",
+      "evidence": "Position, text, sectional borders, dashed/solid styling and arrow topology retained exactly; grayscale conveys all labeled relations."
+    },
+    {
+      "id": "C26",
+      "name": "No red-green semantic contrast",
+      "result": "PASS",
+      "evidence": "Accessible palette uses pastel blue, teal, ochre, lavender and neutrals without a red-versus-green status key or semantic opposition."
+    },
+    {
+      "id": "C27",
+      "name": "No rainbow/continuous scale",
+      "result": "PASS",
+      "evidence": "Discrete fills for fixed named sections; no colour bar, heatmap, rainbow gradient or continuum in SVG/PNG."
+    },
+    {
+      "id": "C28",
+      "name": "Grayscale interpretability",
+      "result": "PASS",
+      "evidence": "Provided grayscale PNG is exactly byte-pixel-equivalent to independently converting delivered RGB image with PIL L-to-RGB; section labels, connectors and distinctions are legible."
+    },
+    {
+      "id": "C29",
+      "name": "Contrast independently recalculated",
+      "result": "PASS",
+      "evidence": "WCAG relative luminance recomputed for 12 supplied light fills against black: minimum 16.591864:1 for #E8E2F2, exceeding 4.5:1; matches local QA."
+    },
+    {
+      "id": "C30",
+      "name": "Colour not status/authority signifier",
+      "result": "PASS",
+      "evidence": "No fill encodes PASS, scientific result, certification or run permission alone; runtime state explicitly textual."
+    },
+    {
+      "id": "C31",
+      "name": "RGB and Nature-facing guidance alignment",
+      "result": "PASS",
+      "evidence": "Opaque RGB/RGBA PNG and RGB SVG palette; Nature Computational Science official formatting specifies <=180 mm and 5–7 pt sans-serif; Nature guidance supports RGB, distinct accessible colours, no red-green contrast/rainbow."
+    },
+    {
+      "id": "C32",
+      "name": "Restrained professional hierarchy",
+      "result": "PASS",
+      "evidence": "Direct colour-versus-parent and grayscale visual review: muted fills group categories without gradients, decorative effects or additional semantic categories."
+    },
+    {
+      "id": "C33",
+      "name": "Concise matched legend",
+      "result": "PASS",
+      "evidence": "621-byte separate legend begins with a brief title, names principal regions, describes non-normative derivative, avoids process-level methodology."
+    },
+    {
+      "id": "C34",
+      "name": "Correct and complete alt text",
+      "result": "PASS",
+      "evidence": "1,553-byte alt text tracks three authorities, four planes, six modules, six contract nodes, nine stages, V&V/IV&V separation, runtime band and redundant colour."
+    },
+    {
+      "id": "C35",
+      "name": "No new scientific or normative claim",
+      "result": "PASS",
+      "evidence": "Only two figure-version text tokens and colour attrs differ from parent; 83 vector paths, 89 text positions/styles and all material scientific labels preserved."
+    },
+    {
+      "id": "C36",
+      "name": "No downstream execution/publication authority",
+      "result": "PASS",
+      "evidence": "Control decision and launch prohibit MkDocs insertion, GitHub Pages, scientific runtime and publication submission; this readback only establishes publication-asset eligibility."
+    }
+  ],
+  "vector_readback": {
+    "width_mm": 180.0,
+    "height_mm": 165.0,
+    "svg_text_elements": 89,
+    "svg_raster_image_elements": 0,
+    "svg_path_elements": 83,
+    "v101_v102_path_d_equal": true,
+    "v101_v102_noncolor_geometry_equal": true,
+    "changed_semantic_labels_except_figure_version": 0,
+    "figure_version_identifier_changes": 2,
+    "pdf_pages": 1,
+    "pdf_vector_drawing_count": 83,
+    "pdf_embedded_raster_images": 0,
+    "pdf_extractable_text_spans": 89,
+    "actual_text_font_min_pt": 5.0,
+    "actual_text_font_max_pt": 6.8
+  },
+  "png_readback": {
+    "pixels": [
+      2125,
+      1948
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "alpha": "opaque",
+    "grayscale_exact_from_delivered_color": true
+  },
+  "contrast_readback": {
+    "minimum_black_text_ratio": 16.5918644967066,
+    "minimum_fill": "#E8E2F2",
+    "pass_threshold": 4.5,
+    "result": "PASS"
+  },
+  "double_render_evidence_scope": {
+    "recorded_a_b_equal_for_three_formats": true,
+    "delivered_outputs_match_a_and_b_records": true,
+    "separate_physical_b_outputs_present": false,
+    "generator_rerun_performed": false,
+    "interpretation": "PASS_DOCUMENTARY_BINDING_NOT_INDEPENDENT_REEXECUTION"
+  },
+  "result": "PASS_TARGETED_INDEPENDENT_VISUAL_READBACK_MM_DEVELOPMENT_ARCHITECTURE_FIGURE_V1_0_2_ACCESSIBLE_COLOR_NCS_ALIGNMENT",
+  "f01": "PASS_PRESERVED",
+  "f02": "PASS_PRESERVED",
+  "f03": "PASS_PRESERVED",
+  "accessible_color_editorial_change": "PASS",
+  "grayscale_interpretability": "PASS",
+  "ncs_alignment": "PASS",
+  "figure_status": "PUBLICATION_ASSET_ELIGIBLE",
+  "generative_ai_image_used": false,
+  "mkdocs_insertion_authorized": false,
+  "github_pages_activation_authorized": false,
+  "scientific_runtime_authorized": false,
+  "publication_submission_authorized": false,
+  "next_allowed": "CONTROL_PLANE_ADJUDICATION_AND_MKDOCS_INSERTION_OF_MM_DEVELOPMENT_ARCHITECTURE_FIGURE_V1_0_2",
+  "project_source_recommendation": "ADD",
+  "source_admission_performed": false,
+  "independent_report": {
+    "file": "MM_DEVELOPMENT_ARCHITECTURE_FIGURE_V1_0_2_INDEPENDENT_VISUAL_READBACK_REPORT_v1.0.0.md",
+    "bytes": 14226,
+    "sha256": "376e540603fc2f3d238680dd130115d6f90ec43091ab89ddc29cc9d080e24fa2"
+  },
+  "stop": true
+}

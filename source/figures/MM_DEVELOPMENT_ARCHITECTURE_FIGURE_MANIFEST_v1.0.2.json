@@ -1,0 +1,96 @@
+{
+  "figure_id": "MM-DEVELOPMENT-ARCHITECTURE-FIGURE",
+  "version": "1.0.2",
+  "title": "Gate-governed scientific software development architecture of the Module Minimum (MM) system",
+  "generator": "Python + Matplotlib",
+  "generative_ai_image_used": false,
+  "nature_profile": {
+    "target_width_mm": 180.0,
+    "target_height_mm": 165.0,
+    "standard_label_font_pt_min": 5.0,
+    "standard_label_font_pt_max": 7.0,
+    "png_dpi": 300
+  },
+  "colour_accessibility": {
+    "rgb": true,
+    "red_green_semantic_dependence": false,
+    "rainbow_scale_used": false,
+    "colour_is_redundant_grouping_cue": true,
+    "black_text_on_light_fills": true,
+    "palette": {
+      "authority_fill": "#DCEAF7",
+      "authority_edge": "#285A7A",
+      "method_fill": "#E8EDF2",
+      "method_edge": "#4B5563",
+      "governance_fill": "#EAF2F8",
+      "governance_edge": "#2F5D7C",
+      "data_fill": "#DDF3F0",
+      "data_edge": "#2A756D",
+      "module_fill": "#FFF1CC",
+      "module_edge": "#7A6518",
+      "contract_fill": "#ECE6F6",
+      "contract_edge": "#6B4C8A",
+      "verification_fill": "#DCEAF7",
+      "validation_fill": "#FBE7D4",
+      "assurance_fill": "#E8E2F2",
+      "runtime_fill": "#EFEFEF",
+      "runtime_edge": "#4B4B4B",
+      "lifecycle_fill": "#F7F7F7",
+      "lifecycle_edge": "#5B5B5B",
+      "historical_fill": "#F4F4F4",
+      "historical_edge": "#6B7280"
+    }
+  },
+  "generator_observed": {
+    "used_font_sizes_pt": [
+      5.0,
+      5.05,
+      5.1,
+      5.15,
+      5.2,
+      5.25,
+      5.4,
+      5.5,
+      6.3,
+      6.6,
+      6.8
+    ],
+    "used_line_widths_pt": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.75,
+      0.8
+    ]
+  },
+  "svg_structural_readback": {
+    "width_pt": 510.23622,
+    "height_pt": 467.716535,
+    "width_mm": 179.9999998333333,
+    "height_mm": 164.99999984722223,
+    "text_elements": 89,
+    "image_elements": 0,
+    "path_elements": 83,
+    "publication_font_stack_declared": true
+  },
+  "outputs": {
+    "mm-development-architecture-v1.0.2.svg": {
+      "bytes": 48532,
+      "sha256": "579a429f08120dafd94a81d2c3f34122eb3e23bfc18e3eb9cd7b1481e7e94a27"
+    },
+    "mm-development-architecture-v1.0.2.pdf": {
+      "bytes": 9160,
+      "sha256": "c4e03435d2217c4e63513b9ca968f5076d730c8cfa4c19c141d3e5b37f322bcc"
+    },
+    "mm-development-architecture-v1.0.2.png": {
+      "bytes": 494582,
+      "sha256": "906d0d596695d1598ff5b877966664083934d06aa6804fad58c53e3bdd6ae784"
+    }
+  },
+  "targeted_findings": {
+    "F01": "connector enters contract chain at MODULE OUTPUT only",
+    "F02": "IV&V non-claim contained in assurance region; runtime boundary spatially separate",
+    "F03": "authored directly at 180 x 165 mm with standard labels 5-7 pt"
+  }
+}
