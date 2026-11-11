@@ -1,16 +1,41 @@
-# MM Methodology MkDocs source — v1.0.1
+> **English documentation**
+>
+> For international readers and Nature Food reviewers: [README_EN_US.md](README_EN_US.md).
+>
+> Interactive application: [MHSMM EN-USA demonstrator](https://mike-jorge.shinyapps.io/mhsmm-enusa/).
+>
+> This repository preserves the historical R implementation developed during
+> the 2024 doctoral work. Scientific code and historical identifiers remain unchanged.
 
-This branch contains the exact controlled methodology Markdown v1.0.1 and the custom MkDocs presentation source used for the public documentation projection.
+# Módulo Mínimo da bovinocultura de corte em pasto no Brasil
+Este repositório contém o código-fonte necessário para a definição do módulo mínimo de exploração da bovinocultura de corte em pasto nos biomas Amazônia, Cerrado e Mata Atlântica, levando em consideração a renda requerida pelo bovinocultor definida a priori.
 
-## Boundary
+O modelo híbrido de simulação de Módulo Mínimo (MHSMM) apresenta uma arquitetura modular estruturada em quatro submodelos distintos, que são:
+1. *Módulo 1: Ambiente de Produção*
+   - Este módulo aborda as condições ambientais e os recursos disponíveis, fundamentais para a produção.
+     
+2. *Módulo 2: Produção Vegetal (Pasto)*
+   - Focado na produção de pastagens, este submodelo simula o crescimento e a produtividade das forrageiras, considerando diferentes cenários de manejo e fertilização.
 
-This documentation source is non-normative and does not authorize scientific, GEE, DSSAT, Sobol, production, or publication-submission runtime. The certified MM Architecture and Manual remain superior authorities.
+3. *Módulo 3: Produção Animal (Desempenho)*
+   - Este módulo simula o desempenho dos animais, incluindo ganho de peso, taxas de crescimento e outras métricas zootécnicas relevantes.
 
-## MkDocs layout
+4. *Módulo 4: Econômico (Viabilidade e risco)*
+   - Focado na análise econômica, este submodelo avalia a viabilidade financeira da exploração, considerando custos, receitas e indicadores de rentabilidade.
 
-- `docs/index.md` — controlled methodology Markdown
-- `mkdocs.yml` — MkDocs configuration
-- `custom_theme/main.html` — custom Jinja2 theme
-- `docs/assets/mm.css` — presentation stylesheet
-- `MM_METHODOLOGY_SOURCE_REGISTER_v1.0.1.json` — source register
-- `MM_METHODOLOGY_SOURCE_AUTHORITY_LOCK_v1.0.1.md` — documentary source lock
+     ![image](https://github.com/user-attachments/assets/bf083bc0-bda3-4b48-97a9-1b95c4714cfc)
+
+A integração desses submodelos permite uma análise abrangente e detalhada das diversas dimensões da bovinocultura de corte em pasto, proporcionando informações essenciais para a tomada de decisão e o planejamento estratégico.
+
+Diagrama simplificado da modelagem do fluxo de dados de saída. Bovinocultura de corte de ciclo completo em pasto. Modelo Híbrido de Simulação Módulo Mínimo (MHSMM). Brasil.
+ 
+ ![image](https://github.com/user-attachments/assets/f08267a4-6395-4bdb-bf16-c87a379e1f5a)
+
+# Caso de uso
+Diagrama simplificado de caso de uso. Modelo Híbrido de Simulação Módulo Mínimo (MHSMM). Brasil.
+![image](https://github.com/user-attachments/assets/71f8e5bb-c4fd-4832-8317-bcf590251315)
+
+# Objetivo
+O modelo fornece o número inicial de matrizes (vacas) e o tamanho da área total (ha) necessária de pasto para atingir a renda desejada pelo bovinocultor (R$/ano).
+
+Conferir o arquivo [main.R](R/main.R).
