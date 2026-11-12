@@ -1,0 +1,188 @@
+{
+  "record_type": "MM_LOCAL_EXECUTION_ADAPTER_FIGURE_V1_0_6_FINAL_TARGETED_INDEPENDENT_CLOSURE_RESULT",
+  "record_version": "1.0.0",
+  "project": "Artigo 2 - MM",
+  "review_date_local": "2026-11-11",
+  "review_mode": "SEPARATELY_QUALIFIED_READ_ONLY_DOCUMENTARY_STATIC_VECTOR_CLOSURE",
+  "operation": "SEPARATELY_QUALIFIED_FINAL_TARGETED_CLOSURE_OF_MM_LOCAL_EXECUTION_ADAPTER_FIGURE_V1_0_6",
+  "external_identity": {
+    "expected_bytes": 1291525,
+    "observed_bytes": 1291525,
+    "expected_sha256": "6356f2833dd0fc48e9909b190c78de8e95631dd2f63a8881743b5371ef27c609",
+    "observed_sha256": "6356f2833dd0fc48e9909b190c78de8e95631dd2f63a8881743b5371ef27c609",
+    "match": true
+  },
+  "archive_integrity": {
+    "member_count": 26,
+    "payloads": 24,
+    "checksums": 24,
+    "crc_pass": true,
+    "unique_safe_paths": true
+  },
+  "parent_hold_preserved": true,
+  "report": {
+    "file": "MM_LOCAL_EXECUTION_ADAPTER_FIGURE_V1_0_6_FINAL_TARGETED_INDEPENDENT_CLOSURE_PASS_REPORT_v1.0.0.md",
+    "bytes": 12447,
+    "sha256": "5894484461ab72a4af5a2351844fbf59c41399779dc9c5b55db9aa8f40863425"
+  },
+  "independent_vector_evidence": {
+    "file": "MM_LOCAL_EXECUTION_ADAPTER_FIGURE_V1_0_6_INDEPENDENT_VECTOR_READBACK_v1.0.0.json",
+    "bytes": 7283,
+    "sha256": "3f5a5410d516cb39a43ecfdeecc44f2e536522bcb2ac96840ba64c34e7d91f5a"
+  },
+  "required_checks": 16,
+  "passed_checks": 16,
+  "hold_checks": 0,
+  "checks": [
+    {
+      "number": 1,
+      "id": "FITC-01",
+      "predicate": "Identidade externa destacada, anterior à abertura",
+      "status": "PASS",
+      "evidence": "O registro detached PREISSUED_EXTERNAL_IDENTITY foi lido antes do ZIP nesta nova instância; esperado/observado 1.291.525 bytes e SHA-256 exato 6356f2833dd0fc48e9909b190c78de8e95631dd2f63a8881743b5371ef27c609. O sufixo de upload `(1)` não altera os bytes."
+    },
+    {
+      "number": 2,
+      "id": "FITC-02",
+      "predicate": "Segurança e integridade ZIP",
+      "status": "PASS",
+      "evidence": "26 membros, únicos e regulares; nenhum path inseguro, symlink ou membro criptografado; CRC íntegro; `PACKAGE_MANIFEST.json` 24/24 e `SHA256SUMS.txt` 24/24 coincidem byte a byte com o conteúdo."
+    },
+    {
+      "number": 3,
+      "id": "FITC-03",
+      "predicate": "Vínculo do HOLD e disposição v1.0.5",
+      "status": "PASS",
+      "evidence": "Resultado parent 19.691 bytes/SHA-256 `1c50fa81…306c`; relatório 16.544 bytes/SHA-256 `61ea829a…8960`; disposição CP SHA-256 `964418d6068098b37cdb7554bf159ed29af1c5a6a232eacdd2a9daed1436f7fa`. HOLD parent com dois findings exatos `FIG2-V105-ADMISSION-01` e `FIG2-V105-RB-01`, preservado."
+    },
+    {
+      "number": 4,
+      "id": "FITC-04",
+      "predicate": "Sucessor prospectivo sem mutação parent",
+      "status": "PASS",
+      "evidence": "Fontes distintas dentro do ZIP: v1.0.5 66.900 bytes/SHA-256 `c58e6d3c…bb3f`; v1.0.6 70.342 bytes/SHA-256 `1bde6838…625c1`. Nenhuma escrita foi feita sobre v1.0.5; a correção é nova candidata."
+    },
+    {
+      "number": 5,
+      "id": "FITC-05",
+      "predicate": "Delta limitado à microgeometria/QA/versioning",
+      "status": "PASS",
+      "evidence": "Diff textual reconstruído: 216 linhas em saída unified, largura Reviewer sandbox 27,0→26,0 mm, deslocando o right port 176,0→175,0 mm e a associação dependente; SVG panel gids e métricas de tinta visível adicionados, mais nomes/identidade de versão. Sem mudança de atores, permissões, texto científico, palette, canvas, font sizing ou estado runtime."
+    },
+    {
+      "number": 6,
+      "id": "FITC-06",
+      "predicate": "A/B double render e identidade entregue",
+      "status": "PASS",
+      "evidence": "QA registra A=B para SVG, PDF, PNG e manifesto; hashes/tamanhos A e B foram recomparados com os bytes efetivamente entregues, 4/4 exatos. **Escopo:** os dois builds físicos separados não foram fornecidos; a igualdade entre A e B é evidência de produção verificada documentalmente, não um rerender independente. O PASS histórico deste predicado permanece em non-regression."
+    },
+    {
+      "number": 7,
+      "id": "FITC-07",
+      "predicate": "Formato físico e vetorial",
+      "status": "PASS",
+      "evidence": "PDF 179,999995×164,999995 mm e SVG 180×165 mm; fonte visível 5,0–6,8 pt; strokes 0,45–0,80 pt; 93 elementos SVG text editáveis e zero images; PDF vetorial sem images, 2 CID TrueType fonts incorporadas; PNG 2125×1948 px a ~300 dpi."
+    },
+    {
+      "number": 8,
+      "id": "FITC-08",
+      "predicate": "Semântica evidence read e right port",
+      "status": "PASS",
+      "evidence": "Trajeto `review/ → Reviewer sandbox` identificado no fonte e no vetor exportado. A linha percorre corredor inferior até x=179,5 mm, sobe externamente e ingressa perpendicularmente pelo lado direito da Reviewer sandbox. Não amplia acesso de `mm-review` a output/scratch, não concede capabilities."
+    },
+    {
+      "number": 9,
+      "id": "FITC-09",
+      "predicate": "Terminal PDF visível após overpaint",
+      "status": "PASS",
+      "evidence": "PDF drawing 21 (seta) ocorre antes do filled Reviewer panel drawing 39; após subtrair o contorno de 0,60 pt, há 3.944167 mm de tinta visível, ≥ 3,000000 mm."
+    },
+    {
+      "number": 10,
+      "id": "FITC-10",
+      "predicate": "Terminal SVG visível após overpaint",
+      "status": "PASS",
+      "evidence": "No SVG, grupo `terminal-evidence-read` e `panel-reviewer-sandbox` (contorno de 0,60 pt) fornecem 3.944167 mm visíveis, ≥ 3,000000 mm."
+    },
+    {
+      "number": 11,
+      "id": "FITC-11",
+      "predicate": "Robustez producer PDF+SVG para cinco fluxos",
+      "status": "PASS",
+      "evidence": "Reconstituição independente das cinco geometrias exportadas: mínimos PDF/SVG 3,944167/3,944167 mm. Todos os dez valores superam tanto 3,0 mm congelado como a meta producer 3,25 mm. QA producer coincide com os valores exportados."
+    },
+    {
+      "number": 12,
+      "id": "FITC-12",
+      "predicate": "Distância física evidence route → A1",
+      "status": "PASS",
+      "evidence": "PDF path 20, A1 panel 38; distância perpendicular do corredor y=86,0 mm ao perímetro do painel A1 subtraídas ambas as semilarguras dos strokes: 1.347155 mm ≥ 1,000000 mm."
+    },
+    {
+      "number": 13,
+      "id": "FITC-13",
+      "predicate": "Corner clearance e incidência",
+      "status": "PASS",
+      "evidence": "Cinco ports conferidos nos vetores PDF/SVG; corner clearance PDF mínima 3,449994 mm ≥ 3,000000 mm; `review evidence read` corner 8,449996 mm; incidência horizontal ao right-edge e perpendicular em todos os cinco destinos."
+    },
+    {
+      "number": 14,
+      "id": "FITC-14",
+      "predicate": "Gramática e 12 mutações negativas",
+      "status": "PASS",
+      "evidence": "AST do fonte contém 12 chamadas calculadas de `results.append`, sem resultado booleano constante; `add_poly_arrow` e `add_poly_association` invocam a mesma gramática de produção. Fixture real chama `_validate_connector_grammar(\"identity_binding\", True)` e exige ValueError `IDENTITY_BINDING_ARROWHEAD_FORBIDDEN`; QA originária reporta 12/12. SVG associações de identidade não contêm arrowheads."
+    },
+    {
+      "number": 15,
+      "id": "FITC-15",
+      "predicate": "39 PASS parent e restrições preservados",
+      "status": "PASS",
+      "evidence": "O parent documenta 39/44 PASS na ancestral v1.0.4 e target v1.0.5 PASS exceto admissão/tinta visível. O delta v1.0.6 só altera direito Reviewer/QA/versionamento. Inspeção estática e vetorial demonstra non-regression, sem reexecutar 39 testes; CR-04, M4 HOLD premodel, M4R1 HOLD F03 e proibições permanecem."
+    },
+    {
+      "number": 16,
+      "id": "FITC-16",
+      "predicate": "Conjunção terminal",
+      "status": "PASS",
+      "evidence": "Checks 1–15 todos PASS; zero finding material remanescente; `FIG2-V105-ADMISSION-01` e `FIG2-V105-RB-01` fechados prospectivamente. `PUBLICATION_ASSET_ELIGIBLE` é elegibilidade do arquivo, não autorização para MkDocs, GitHub Pages, runtime ou submissão."
+    }
+  ],
+  "material_findings": [],
+  "material_finding_count": 0,
+  "evidence_read_terminal_pdf_visible_mm": 3.944167086316479,
+  "evidence_read_terminal_svg_visible_mm": 3.9441666805555378,
+  "evidence_to_a1_stroke_clearance_mm": 1.3471550602879787,
+  "all_five_pdf_svg_visible_terminals_ge_3_25": true,
+  "all_five_ports_corner_ge_3": true,
+  "all_five_incidence_perpendicular": true,
+  "double_render_assurance_basis": "A_B_IDENTITIES_IN_PRODUCER_QA_MATCH_EXACT_SHIPPED_BYTES;_INDEPENDENT_RERENDER_NOT_PERFORMED",
+  "source_candidate_modified": false,
+  "source_parent_modified": false,
+  "generator_imported": false,
+  "generator_executed": false,
+  "generator_compiled": false,
+  "candidate_rerendered": false,
+  "candidate_repackaged": false,
+  "live_opt_mm_accessed": false,
+  "subagents_used": false,
+  "github_write": false,
+  "result": "PASS_FINAL_TARGETED_INDEPENDENT_CLOSURE_MM_LOCAL_EXECUTION_ADAPTER_FIGURE_V1_0_6",
+  "required_checks_terminal": "16_OF_16_PASS",
+  "FIG2_V105_ADMISSION_01": "CLOSED",
+  "FIG2_V105_RB_01": "CLOSED",
+  "preserved_parent_pass_checks_nonregressed": true,
+  "figure_status": "PUBLICATION_ASSET_ELIGIBLE",
+  "ncs_alignment": "PASS_WITH_DECLARED_FONT_FAMILY_LIMITATION",
+  "mkdocs_insertion_authorized": false,
+  "github_pages_activation_authorized": false,
+  "scientific_runtime_authorized": false,
+  "gee_runtime_authorized": false,
+  "production_runtime_authorized": false,
+  "publication_submission_authorized": false,
+  "next_allowed": "CONTROL_PLANE_FINAL_ADJUDICATION_AND_MKDOCS_INSERTION_OF_MM_LOCAL_EXECUTION_ADAPTER_FIGURE_V1_0_6",
+  "project_source_recommendation": "ADD",
+  "project_source_proposed_title": "MM_LOCAL_EXECUTION_ADAPTER_FIGURE_V1_0_6_FINAL_TARGETED_INDEPENDENT_CLOSURE_PASS_v1.0.0",
+  "project_source_class": "B_ACTIVE_STATE_INDEPENDENT_ASSURANCE",
+  "project_source_admitted": false,
+  "stop": true
+}
