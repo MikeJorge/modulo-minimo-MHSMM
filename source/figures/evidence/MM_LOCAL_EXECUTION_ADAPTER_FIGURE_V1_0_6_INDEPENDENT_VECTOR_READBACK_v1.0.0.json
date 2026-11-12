@@ -1,0 +1,237 @@
+{
+  "external_identity": {
+    "expected_bytes": 1291525,
+    "observed_bytes": 1291525,
+    "expected_sha256": "6356f2833dd0fc48e9909b190c78de8e95631dd2f63a8881743b5371ef27c609",
+    "observed_sha256": "6356f2833dd0fc48e9909b190c78de8e95631dd2f63a8881743b5371ef27c609",
+    "match": true
+  },
+  "archive": {
+    "member_count": 26,
+    "payloads": 24,
+    "checksums": 24,
+    "crc_pass": true,
+    "unique_safe_paths": true
+  },
+  "prior": {
+    "parent_v105_result": "HOLD_TARGETED_INDEPENDENT_VISUAL_READBACK_MM_LOCAL_EXECUTION_ADAPTER_FIGURE_V1_0_5",
+    "material_findings": [
+      "FIG2-V105-ADMISSION-01",
+      "FIG2-V105-RB-01"
+    ],
+    "parent_v105_pass": 23,
+    "parent_v105_hold": 5,
+    "parent_39_prior_pass": 39,
+    "parent_disposition_sha256": "964418d6068098b37cdb7554bf159ed29af1c5a6a232eacdd2a9daed1436f7fa",
+    "parent_program_sha256": "c58e6d3cfc81a6332541e9485f1a4d4ee2af58afbcace9d6118a7e62c6d7bb3f"
+  },
+  "deltas": {
+    "text_diff_lines": 216,
+    "reviewer_sandbox_width_v105_mm": 27,
+    "reviewer_sandbox_width_v106_mm": 26,
+    "version_v105": "1.0.5",
+    "version_v106": "1.0.6"
+  },
+  "double_render_recorded": {
+    "mm-local-execution-adapter-v1.0.6.svg": {
+      "shipped_bytes": 39143,
+      "shipped_sha256": "eef2e70870c211d5343aacf491543d41873b5e4c60e60d3cd9b6feab2e69845a",
+      "recorded_build_a_b_equal": true,
+      "shipped_matches_recorded_build_a_b": true
+    },
+    "mm-local-execution-adapter-v1.0.6.pdf": {
+      "shipped_bytes": 36888,
+      "shipped_sha256": "a239f7836fc29d6b3234ed987fd52ee75766207e7302810ccff15c8e445f70f8",
+      "recorded_build_a_b_equal": true,
+      "shipped_matches_recorded_build_a_b": true
+    },
+    "mm-local-execution-adapter-v1.0.6.png": {
+      "shipped_bytes": 487700,
+      "shipped_sha256": "497a9cff8263f1e105e94154a768e0593c7e40d5498154e9e8957906edd7cddd",
+      "recorded_build_a_b_equal": true,
+      "shipped_matches_recorded_build_a_b": true
+    },
+    "MM_LOCAL_EXECUTION_ADAPTER_FIGURE_MANIFEST_v1.0.6.json": {
+      "shipped_bytes": 32820,
+      "shipped_sha256": "5aac27a30a8689d78aa73d49ab73ffab35b25dea93456d933ef138ce2013f6ab",
+      "recorded_build_a_b_equal": true,
+      "shipped_matches_recorded_build_a_b": true
+    }
+  },
+  "vector": {
+    "pdf_page_dimensions_pt": [
+      510.2362060546875,
+      467.7165222167969
+    ],
+    "pdf_canvas_mm": [
+      179.99999491373697,
+      164.99999533759222
+    ],
+    "svg_canvas_pt": [
+      510.23622,
+      467.716535
+    ],
+    "svg_text_count": 93,
+    "svg_image_count": 0,
+    "svg_path_count": 59,
+    "pdf_page_count": 1,
+    "pdf_draw_count": 59,
+    "pdf_images": 0,
+    "pdf_fonts": [
+      [
+        15,
+        "ttf",
+        "Type0",
+        "FRZNSF+LiberationSans-Bold",
+        "F1",
+        "Identity-H",
+        0
+      ],
+      [
+        22,
+        "ttf",
+        "Type0",
+        "FRZNSF+LiberationSans",
+        "F2",
+        "Identity-H",
+        0
+      ]
+    ],
+    "pdf_font_sizes_pt": [
+      5.0,
+      5.2,
+      5.3,
+      6.0,
+      6.4,
+      6.8
+    ],
+    "pdf_visible_strokes_pt": [
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "png_size": [
+      2125,
+      1948
+    ],
+    "png_dpi": [
+      299.9994,
+      299.9994
+    ],
+    "grayscale_size": [
+      2125,
+      1948
+    ]
+  },
+  "access_flows": {
+    "read input": {
+      "svg_terminal_mm": 7.302791394444446,
+      "pdf_terminal_mm": 7.302794986300998,
+      "svg_visible_mm": 6.944166677777782,
+      "pdf_visible_mm": 6.944167001545429,
+      "svg_corner_mm": 3.449999802777778,
+      "pdf_corner_mm": 3.449993981255425,
+      "target_side": "left",
+      "svg_path_group": "terminal-read-input",
+      "svg_panel_group": "panel-a1-sandbox",
+      "pdf_terminal_index": 9,
+      "pdf_panel_index": 38,
+      "panel_stroke_pt": 0.6000000238418579,
+      "perpendicular": true,
+      "later_panel_overpaint": true,
+      "pass_3_0": true,
+      "pass_producer_3_25": true
+    },
+    "read review": {
+      "svg_terminal_mm": 7.302791394444446,
+      "pdf_terminal_mm": 7.302794986300998,
+      "svg_visible_mm": 6.944166677777782,
+      "pdf_visible_mm": 6.944167001545429,
+      "svg_corner_mm": 8.45000003333333,
+      "pdf_corner_mm": 8.44999025132921,
+      "target_side": "left",
+      "svg_path_group": "terminal-read-review",
+      "svg_panel_group": "panel-a1-sandbox",
+      "pdf_terminal_index": 12,
+      "pdf_panel_index": 38,
+      "panel_stroke_pt": 0.6000000238418579,
+      "perpendicular": true,
+      "later_panel_overpaint": true,
+      "pass_3_0": true,
+      "pass_producer_3_25": true
+    },
+    "write output": {
+      "svg_terminal_mm": 5.283070177777784,
+      "pdf_terminal_mm": 5.283075459798177,
+      "svg_visible_mm": 4.952985888888891,
+      "pdf_visible_mm": 4.952990093247758,
+      "svg_corner_mm": 8.94999973888889,
+      "pdf_corner_mm": 8.949997414482963,
+      "target_side": "bottom",
+      "svg_path_group": "terminal-write-output",
+      "svg_panel_group": "panel-output-surface",
+      "pdf_terminal_index": 15,
+      "pdf_panel_index": 32,
+      "panel_stroke_pt": 0.550000011920929,
+      "perpendicular": true,
+      "later_panel_overpaint": true,
+      "pass_3_0": true,
+      "pass_producer_3_25": true
+    },
+    "write primary Gate workspace": {
+      "svg_terminal_mm": 10.283070408333316,
+      "pdf_terminal_mm": 10.283071729871962,
+      "svg_visible_mm": 9.944166674999988,
+      "pdf_visible_mm": 9.944166916774378,
+      "svg_corner_mm": 3.7499999083333315,
+      "pdf_corner_mm": 3.7499972025553383,
+      "target_side": "right",
+      "svg_path_group": "terminal-write-workspace",
+      "svg_panel_group": "panel-primary-gate-workspace",
+      "pdf_terminal_index": 18,
+      "pdf_panel_index": 37,
+      "panel_stroke_pt": 0.6000000238418579,
+      "perpendicular": true,
+      "later_panel_overpaint": true,
+      "pass_3_0": true,
+      "pass_producer_3_25": true
+    },
+    "review evidence read": {
+      "svg_terminal_mm": 4.283070413888887,
+      "pdf_terminal_mm": 4.283071899414062,
+      "svg_visible_mm": 3.9441666805555378,
+      "pdf_visible_mm": 3.944167086316479,
+      "svg_corner_mm": 8.45000003333333,
+      "pdf_corner_mm": 8.449995634290905,
+      "target_side": "right",
+      "svg_path_group": "terminal-evidence-read",
+      "svg_panel_group": "panel-reviewer-sandbox",
+      "pdf_terminal_index": 21,
+      "pdf_panel_index": 39,
+      "panel_stroke_pt": 0.6000000238418579,
+      "perpendicular": true,
+      "later_panel_overpaint": true,
+      "pass_3_0": true,
+      "pass_producer_3_25": true
+    }
+  },
+  "evidence_to_a1_stroke_clearance_mm": 1.3471550602879787,
+  "grammar": {
+    "identity_negative_real_mutation": true,
+    "negative_fixture_count": 12,
+    "identity_groups_without_arrowheads": true
+  },
+  "authority_flags": {
+    "mkdocs_insertion_authorized": false,
+    "github_pages_activation_authorized": false,
+    "scientific_runtime_authorized": false,
+    "publication_submission_authorized": false
+  },
+  "limitations": [
+    "Recorded A/B double rendering is checked against the shipped bytes; two independently supplied physical builds are not present. No generator execution was performed.",
+    "Independent geometry reconstructed from published PDF/SVG; no regeneration of candidate."
+  ]
+}
