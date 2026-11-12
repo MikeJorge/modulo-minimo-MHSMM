@@ -6,6 +6,7 @@ strict: true
 nav:
   - Methodology: index.md
   - Architecture figure: architecture-figure.md
+  - Local execution environment: local-execution-adapter.md
 theme:
   name: null
   custom_dir: custom_theme
@@ -20,5 +21,6 @@ extra_css:
 extra:
   methodology_version: "1.0.1"
   architecture_figure_version: "1.0.2"
+  local_execution_adapter_figure_version: "1.0.6"
   normative_authority: false
   runtime_authority: false
