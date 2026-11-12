@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="510.23622pt" height="467.716535pt" viewBox="0 0 510.23622 467.716535" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Qualified local execution adapter and controlled development environment for the Module Minimum (MM) system</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Qualified local execution adapter and controlled development environment for the Module Minimum (MM) system</dc:title>
+    <dc:date>2026-11-11</dc:date>
+    <dc:description>Non-normative local implementation derivative; certified MM authorities control.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>MM deterministic Python/Matplotlib figure generator</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 467.716535 
+L 510.23622 467.716535 
+L 510.23622 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 93.543307 70.866142 
+Q 100.629921 70.866142 106.933912 70.866142 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #000000; stroke-width: 0.7; stroke-linecap: round"/>
+    <path d="M 104.053912 69.426142 
+L 106.933912 70.866142 
+L 104.053912 72.306142 
+z
+" clip-path="url(#pb9528bc27f)" style="stroke: #000000; stroke-width: 0.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 53.858268 93.543307 
+Q 53.858268 100.346457 53.858268 106.590589 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke-dasharray: 1.85,0.8; stroke-dashoffset: 0; stroke: #000000; stroke-width: 0.5; stroke-linecap: round"/>
+    <path d="M 55.298268 103.710589 
+L 53.858268 106.590589 
+L 52.418268 103.710589 
+z
+" clip-path="url(#pb9528bc27f)" style="stroke-dasharray: 1.85,0.8; stroke-dashoffset: 0; stroke: #000000; stroke-width: 0.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 208.913386 214.015748 
+L 243.070866 237.826772 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke-dasharray: 1.665,0.72; stroke-dashoffset: 0; stroke: #7a6518; stroke-width: 0.45"/>
+   </g>
+   <g id="association-execution-identity">
+    <path d="M 372.755906 93.543307 
+L 372.755906 133.228346 
+L 311.811024 133.228346 
+L 311.811024 187.086614 
+L 334.488189 187.086614 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #2a756d; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="association-review-identity">
+    <path d="M 460.629921 93.543307 
+L 460.629921 133.228346 
+L 504.566929 133.228346 
+L 504.566929 187.086614 
+L 496.062992 187.086614 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #2f5d7c; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 44.787402 177.165354 
+L 44.787402 161.574803 
+L 313.228346 161.574803 
+L 313.228346 175.748031 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #285a7a; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="terminal-read-input">
+    <path d="M 313.228346 175.748031 
+Q 323.858268 175.748031 333.929172 175.748031 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #285a7a; stroke-width: 0.5; stroke-linecap: round"/>
+    <path d="M 331.609172 174.588031 
+L 333.929172 175.748031 
+L 331.609172 176.908031 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #285a7a; stroke: #285a7a; stroke-width: 0.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 99.496063 177.165354 
+L 99.496063 165.826772 
+L 313.228346 165.826772 
+L 313.228346 189.92126 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #285a7a; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="terminal-read-review">
+    <path d="M 313.228346 189.92126 
+Q 323.858268 189.92126 333.929172 189.92126 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #285a7a; stroke-width: 0.5; stroke-linecap: round"/>
+    <path d="M 331.609172 188.76126 
+L 333.929172 189.92126 
+L 331.609172 191.08126 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #285a7a; stroke: #285a7a; stroke-width: 0.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 334.488189 195.590551 
+L 293.385827 195.590551 
+L 293.385827 229.606299 
+L 154.204724 229.606299 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #7a6518; stroke-width: 0.55; stroke-linejoin: miter"/>
+   </g>
+   <g id="terminal-write-output">
+    <path d="M 154.204724 229.606299 
+Q 154.204724 221.811024 154.204724 214.630667 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #7a6518; stroke-width: 0.55; stroke-linecap: round"/>
+    <path d="M 153.044724 216.950667 
+L 154.204724 214.630667 
+L 155.364724 216.950667 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #7a6518; stroke: #7a6518; stroke-width: 0.55; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 334.488189 208.346457 
+L 311.811024 208.346457 
+L 311.811024 247.181102 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #7a6518; stroke-width: 0.55; stroke-linejoin: miter"/>
+   </g>
+   <g id="terminal-write-workspace">
+    <path d="M 311.811024 247.181102 
+Q 296.929134 247.181102 282.662163 247.181102 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #7a6518; stroke-width: 0.55; stroke-linecap: round"/>
+    <path d="M 284.982163 248.341102 
+L 282.662163 247.181102 
+L 284.982163 246.021102 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #7a6518; stroke: #7a6518; stroke-width: 0.55; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 99.496063 214.015748 
+L 99.496063 223.937008 
+L 508.818898 223.937008 
+L 508.818898 195.590551 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #2f5d7c; stroke-width: 0.55; stroke-linejoin: miter"/>
+   </g>
+   <g id="terminal-evidence-read">
+    <path d="M 508.818898 195.590551 
+Q 502.440945 195.590551 496.677911 195.590551 
+" clip-path="url(#pb9528bc27f)" style="fill: none; stroke: #2f5d7c; stroke-width: 0.55; stroke-linecap: round"/>
+    <path d="M 498.997911 196.750551 
+L 496.677911 195.590551 
+L 498.997911 194.430551 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #2f5d7c; stroke: #2f5d7c; stroke-width: 0.55; stroke-linecap: round"/>
+   </g>
+   <g id="panel-windows-host">
+    <path d="M 15.165354 94.818898 
+L 92.551181 94.818898 
+Q 94.818898 94.818898 94.818898 92.551181 
+L 94.818898 49.181102 
+Q 94.818898 46.913386 92.551181 46.913386 
+L 15.165354 46.913386 
+Q 12.897638 46.913386 12.897638 49.181102 
+L 12.897638 92.551181 
+Q 12.897638 94.818898 15.165354 94.818898 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #eaf2f8; stroke: #2f5d7c; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-mnt-c-policy">
+    <path d="M 15.165354 142.440945 
+L 92.551181 142.440945 
+Q 94.818898 142.440945 94.818898 140.173228 
+L 94.818898 108.141732 
+Q 94.818898 105.874016 92.551181 105.874016 
+L 15.165354 105.874016 
+Q 12.897638 105.874016 12.897638 108.141732 
+L 12.897638 140.173228 
+Q 12.897638 142.440945 15.165354 142.440945 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #efefef; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #4b4b4b; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-wsl2-platform">
+    <path d="M 108.708661 94.818898 
+L 242.787402 94.818898 
+Q 245.055118 94.818898 245.055118 92.551181 
+L 245.055118 49.181102 
+Q 245.055118 46.913386 242.787402 46.913386 
+L 108.708661 46.913386 
+Q 106.440945 46.913386 106.440945 49.181102 
+L 106.440945 92.551181 
+Q 106.440945 94.818898 108.708661 94.818898 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #eaf2f8; stroke: #2f5d7c; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-mmadmin-actor">
+    <path d="M 258.944882 94.818898 
+L 324.992126 94.818898 
+Q 327.259843 94.818898 327.259843 92.551181 
+L 327.259843 49.181102 
+Q 327.259843 46.913386 324.992126 46.913386 
+L 258.944882 46.913386 
+Q 256.677165 46.913386 256.677165 49.181102 
+L 256.677165 92.551181 
+Q 256.677165 94.818898 258.944882 94.818898 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #fbe7d4; stroke: #9a6324; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-mm-a1-actor">
+    <path d="M 335.480315 94.818898 
+L 410.031496 94.818898 
+Q 412.299213 94.818898 412.299213 92.551181 
+L 412.299213 49.181102 
+Q 412.299213 46.913386 410.031496 46.913386 
+L 335.480315 46.913386 
+Q 333.212598 46.913386 333.212598 49.181102 
+L 333.212598 92.551181 
+Q 333.212598 94.818898 335.480315 94.818898 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ddf3f0; stroke: #2a756d; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-reviewer-actor">
+    <path d="M 423.354331 94.818898 
+L 497.905512 94.818898 
+Q 500.173228 94.818898 500.173228 92.551181 
+L 500.173228 49.181102 
+Q 500.173228 46.913386 497.905512 46.913386 
+L 423.354331 46.913386 
+Q 421.086614 46.913386 421.086614 49.181102 
+L 421.086614 92.551181 
+Q 421.086614 94.818898 423.354331 94.818898 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #eaf2f8; stroke: #2f5d7c; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-filesystem-container">
+    <path d="M 14.173228 260.787402 
+L 297.637795 260.787402 
+L 297.637795 168.661417 
+L 14.173228 168.661417 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ffffff; stroke: #5b5b5b; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-input-surface">
+    <path d="M 21.685039 215.291339 
+L 67.889764 215.291339 
+Q 70.15748 215.291339 70.15748 213.023622 
+L 70.15748 178.15748 
+Q 70.15748 175.889764 67.889764 175.889764 
+L 21.685039 175.889764 
+Q 19.417323 175.889764 19.417323 178.15748 
+L 19.417323 213.023622 
+Q 19.417323 215.291339 21.685039 215.291339 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #dceaf7; stroke: #285a7a; stroke-width: 0.55; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-review-surface">
+    <path d="M 76.393701 215.291339 
+L 122.598425 215.291339 
+Q 124.866142 215.291339 124.866142 213.023622 
+L 124.866142 178.15748 
+Q 124.866142 175.889764 122.598425 175.889764 
+L 76.393701 175.889764 
+Q 74.125984 175.889764 74.125984 178.15748 
+L 74.125984 213.023622 
+Q 74.125984 215.291339 76.393701 215.291339 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #dceaf7; stroke: #285a7a; stroke-width: 0.55; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-output-surface">
+    <path d="M 131.102362 215.291339 
+L 177.307087 215.291339 
+Q 179.574803 215.291339 179.574803 213.023622 
+L 179.574803 178.15748 
+Q 179.574803 175.889764 177.307087 175.889764 
+L 131.102362 175.889764 
+Q 128.834646 175.889764 128.834646 178.15748 
+L 128.834646 213.023622 
+Q 128.834646 215.291339 131.102362 215.291339 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #fff1cc; stroke: #7a6518; stroke-width: 0.55; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-scratch-surface">
+    <path d="M 185.811024 215.291339 
+L 232.015748 215.291339 
+Q 234.283465 215.291339 234.283465 213.023622 
+L 234.283465 178.15748 
+Q 234.283465 175.889764 232.015748 175.889764 
+L 185.811024 175.889764 
+Q 183.543307 175.889764 183.543307 178.15748 
+L 183.543307 213.023622 
+Q 183.543307 215.291339 185.811024 215.291339 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #fff1cc; stroke-dasharray: 2.035,0.88; stroke-dashoffset: 0; stroke: #7a6518; stroke-width: 0.55; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-toolchain-surface">
+    <path d="M 240.519685 215.291339 
+L 286.724409 215.291339 
+Q 288.992126 215.291339 288.992126 213.023622 
+L 288.992126 178.15748 
+Q 288.992126 175.889764 286.724409 175.889764 
+L 240.519685 175.889764 
+Q 238.251969 175.889764 238.251969 178.15748 
+L 238.251969 213.023622 
+Q 238.251969 215.291339 240.519685 215.291339 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ece6f6; stroke: #6b4c8a; stroke-width: 0.55; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-child-command-boundary">
+    <path d="M 21.685039 263.480315 
+L 286.724409 263.480315 
+Q 288.992126 263.480315 288.992126 261.212598 
+L 288.992126 232.582677 
+Q 288.992126 230.314961 286.724409 230.314961 
+L 21.685039 230.314961 
+Q 19.417323 230.314961 19.417323 232.582677 
+L 19.417323 261.212598 
+Q 19.417323 263.480315 21.685039 263.480315 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #efefef; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #4b4b4b; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-child-command-policy">
+    <path d="M 24.094488 259.370079 
+L 195.590551 259.370079 
+L 195.590551 234.992126 
+L 24.094488 234.992126 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #efefef"/>
+   </g>
+   <g id="panel-primary-gate-workspace">
+    <path d="M 205.086614 257.811024 
+L 281.055118 257.811024 
+Q 283.322835 257.811024 283.322835 255.543307 
+L 283.322835 238.818898 
+Q 283.322835 236.551181 281.055118 236.551181 
+L 205.086614 236.551181 
+Q 202.818898 236.551181 202.818898 238.818898 
+L 202.818898 255.543307 
+Q 202.818898 257.811024 205.086614 257.811024 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #fff1cc; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #7a6518; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-a1-sandbox">
+    <path d="M 335.480315 219.543307 
+L 410.031496 219.543307 
+Q 412.299213 219.543307 412.299213 217.275591 
+L 412.299213 168.23622 
+Q 412.299213 165.968504 410.031496 165.968504 
+L 335.480315 165.968504 
+Q 333.212598 165.968504 333.212598 168.23622 
+L 333.212598 217.275591 
+Q 333.212598 219.543307 335.480315 219.543307 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ddf3f0; stroke: #2a756d; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-reviewer-sandbox">
+    <path d="M 423.354331 219.543307 
+L 495.070866 219.543307 
+Q 497.338583 219.543307 497.338583 217.275591 
+L 497.338583 168.23622 
+Q 497.338583 165.968504 495.070866 165.968504 
+L 423.354331 165.968504 
+Q 421.086614 165.968504 421.086614 168.23622 
+L 421.086614 217.275591 
+Q 421.086614 219.543307 423.354331 219.543307 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #eaf2f8; stroke: #2f5d7c; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-harness-controls">
+    <path d="M 321.307087 264.897638 
+L 497.905512 264.897638 
+Q 500.173228 264.897638 500.173228 262.629921 
+L 500.173228 232.866142 
+Q 500.173228 230.598425 497.905512 230.598425 
+L 321.307087 230.598425 
+Q 319.03937 230.598425 319.03937 232.866142 
+L 319.03937 262.629921 
+Q 319.03937 264.897638 321.307087 264.897638 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #f7f7f7; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #5b5b5b; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-controlled-toolchain">
+    <path d="M 15.165354 330.094488 
+L 146.409449 330.094488 
+Q 148.677165 330.094488 148.677165 327.826772 
+L 148.677165 292.96063 
+Q 148.677165 290.692913 146.409449 290.692913 
+L 15.165354 290.692913 
+Q 12.897638 290.692913 12.897638 292.96063 
+L 12.897638 327.826772 
+Q 12.897638 330.094488 15.165354 330.094488 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ece6f6; stroke: #6b4c8a; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-credential-boundary">
+    <path d="M 156.897638 330.094488 
+L 305.149606 330.094488 
+Q 307.417323 330.094488 307.417323 327.826772 
+L 307.417323 292.96063 
+Q 307.417323 290.692913 305.149606 290.692913 
+L 156.897638 290.692913 
+Q 154.629921 290.692913 154.629921 292.96063 
+L 154.629921 327.826772 
+Q 154.629921 330.094488 156.897638 330.094488 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #f7f7f7; stroke: #5b5b5b; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-network-boundary">
+    <path d="M 321.307087 330.094488 
+L 497.905512 330.094488 
+Q 500.173228 330.094488 500.173228 327.826772 
+L 500.173228 292.96063 
+Q 500.173228 290.692913 497.905512 290.692913 
+L 321.307087 290.692913 
+Q 319.03937 290.692913 319.03937 292.96063 
+L 319.03937 327.826772 
+Q 319.03937 330.094488 321.307087 330.094488 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #f7f7f7; stroke: #5b5b5b; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-qualified-adapter-state">
+    <path d="M 15.165354 392.456693 
+L 154.913386 392.456693 
+Q 157.181102 392.456693 157.181102 390.188976 
+L 157.181102 358.15748 
+Q 157.181102 355.889764 154.913386 355.889764 
+L 15.165354 355.889764 
+Q 12.897638 355.889764 12.897638 358.15748 
+L 12.897638 390.188976 
+Q 12.897638 392.456693 15.165354 392.456693 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ddf3f0; stroke: #2a756d; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-m4-state">
+    <path d="M 168.23622 392.456693 
+L 322.15748 392.456693 
+Q 324.425197 392.456693 324.425197 390.188976 
+L 324.425197 358.15748 
+Q 324.425197 355.889764 322.15748 355.889764 
+L 168.23622 355.889764 
+Q 165.968504 355.889764 165.968504 358.15748 
+L 165.968504 390.188976 
+Q 165.968504 392.456693 168.23622 392.456693 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #f7ead5; stroke: #80622a; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-m4r1-state">
+    <path d="M 335.480315 392.456693 
+L 497.905512 392.456693 
+Q 500.173228 392.456693 500.173228 390.188976 
+L 500.173228 358.15748 
+Q 500.173228 355.889764 497.905512 355.889764 
+L 335.480315 355.889764 
+Q 333.212598 355.889764 333.212598 358.15748 
+L 333.212598 390.188976 
+Q 333.212598 392.456693 335.480315 392.456693 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #f7ead5; stroke: #80622a; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-runtime-boundary-panel">
+    <path d="M 14.173228 445.03937 
+L 498.897638 445.03937 
+L 498.897638 405.354331 
+L 14.173228 405.354331 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #efefef; stroke: #4b4b4b; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-runtime-label-scientific-runtime-false">
+    <path d="M 33.590551 442.629921 
+L 127.984252 442.629921 
+Q 130.251969 442.629921 130.251969 440.362205 
+L 130.251969 427.606299 
+Q 130.251969 425.338583 127.984252 425.338583 
+L 33.590551 425.338583 
+Q 31.322835 425.338583 31.322835 427.606299 
+L 31.322835 440.362205 
+Q 31.322835 442.629921 33.590551 442.629921 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ffffff; stroke-dasharray: 1.85,0.8; stroke-dashoffset: 0; stroke: #4b4b4b; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-runtime-label-gee-runtime-false">
+    <path d="M 152.645669 442.629921 
+L 247.03937 442.629921 
+Q 249.307087 442.629921 249.307087 440.362205 
+L 249.307087 427.606299 
+Q 249.307087 425.338583 247.03937 425.338583 
+L 152.645669 425.338583 
+Q 150.377953 425.338583 150.377953 427.606299 
+L 150.377953 440.362205 
+Q 150.377953 442.629921 152.645669 442.629921 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ffffff; stroke-dasharray: 1.85,0.8; stroke-dashoffset: 0; stroke: #4b4b4b; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-runtime-label-production-runtime-false">
+    <path d="M 271.700787 442.629921 
+L 366.094488 442.629921 
+Q 368.362205 442.629921 368.362205 440.362205 
+L 368.362205 427.606299 
+Q 368.362205 425.338583 366.094488 425.338583 
+L 271.700787 425.338583 
+Q 269.433071 425.338583 269.433071 427.606299 
+L 269.433071 440.362205 
+Q 269.433071 442.629921 271.700787 442.629921 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ffffff; stroke-dasharray: 1.85,0.8; stroke-dashoffset: 0; stroke: #4b4b4b; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="panel-runtime-label-m4-rerun-authorized-false">
+    <path d="M 390.755906 442.629921 
+L 485.149606 442.629921 
+Q 487.417323 442.629921 487.417323 440.362205 
+L 487.417323 427.606299 
+Q 487.417323 425.338583 485.149606 425.338583 
+L 390.755906 425.338583 
+Q 388.488189 425.338583 388.488189 427.606299 
+L 388.488189 440.362205 
+Q 388.488189 442.629921 390.755906 442.629921 
+z
+" clip-path="url(#pb9528bc27f)" style="fill: #ffffff; stroke-dasharray: 1.85,0.8; stroke-dashoffset: 0; stroke: #4b4b4b; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 5.3px; font-family: 'Liberation Sans', sans-serif" transform="translate(32.365526 69.612758)">WINDOWS HOST</text>
+    <text style="font-weight: 700; font-size: 5.3px; font-family: 'Liberation Sans', sans-serif" transform="translate(35.45733 74.860619)">host boundary</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(47.052018 120.499637)">/mnt/c</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(20.23444 125.450449)">not active scientific workspace</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(22.871549 130.401262)">inaccessible where required</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 5.2px; font-family: 'Liberation Sans', sans-serif" transform="translate(142.420906 66.985609)">WSL2 | Ubuntu 24.04.4 LTS</text>
+    <text style="font-weight: 700; font-size: 5.2px; font-family: 'Liberation Sans', sans-serif" transform="translate(154.351656 72.210829)">x86_64 | systemd</text>
+    <text style="font-weight: 700; font-size: 5.2px; font-family: 'Liberation Sans', sans-serif" transform="translate(145.70625 77.436049)">native MM root: /opt/mm</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(268.395457 67.19736)">mmadmin | UID 1000</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(268.762254 72.170048)">bootstrap/admin only</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(262.373191 77.12086)">not mutable scientific actor</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(352.047312 67.13486)">mm-a1 | UID 1001</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(338.304343 72.15911)">sole mutable execution actor</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(346.56489 77.109923)">no sudo/adm | caps=0</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(435.809218 67.19736)">mm-review | UID 1003</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(435.751796 72.170048)">independent read-only</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(432.977968 77.12086)">no output/scratch access</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(38.672167 191.932707)">input/</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(32.281152 196.88352)">root-owned</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(24.083495 201.834332)">read-only authority</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(91.577704 191.932707)">review/</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(86.989813 196.88352)">root-owned</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(78.373407 201.834332)">read-only evidence</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(146.560193 191.932707)">output/</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(142.530896 196.88352)">authorized</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(137.666834 201.834332)">mutable output</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(200.161433 191.932707)">scratch/</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(191.82237 196.88352)">Gate-controlled</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(192.098151 201.834332)">execution state</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(252.920875 191.932707)">toolchain/</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(251.115797 196.88352)">root-owned</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(252.090797 201.834332)">immutable</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(73.633535 243.512321)">CHILD COMMAND BOUNDARY</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(46.969082 248.463134)">RO: input/review | RW: output + primary Gate workspace</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(32.347988 253.435821)">input/review/global scratch/auth/config/child AF_INET mutation denied</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(207.186101 245.998665)">PRIMARY GATE WORKSPACE</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(214.322038 250.949477)">bounded within scratch/</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(353.033249 184.136312)">A1 transient unit</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(347.676218 189.087124)">ProtectSystem=strict</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(351.566452 194.037937)">ProtectHome=yes</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(346.840281 198.988749)">NoNewPrivileges=yes</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(345.731296 203.961437)">RestrictSUIDSGID=yes</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(433.785645 184.147249)">Reviewer transient unit</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(435.449708 189.098062)">input/review readable</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(432.669239 194.048874)">output/scratch unusable</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(438.094239 198.999687)">/mnt/c inaccessible</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(438.091895 203.950499)">loopback-only view</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(382.934815 244.068313)">HARNESS CONTROLS</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(361.487549 249.019125)">MAX_ATTEMPTS=1 | automatic retry=false</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(337.453565 253.991813)">resource/side-effect bounds | independent readback | STOP=true</text>
+   </g>
+   <g id="text_17">
+    <g id="patch_9">
+     <path d="M 322.857886 127.354878 
+L 365.961011 127.354878 
+L 365.961011 122.093941 
+L 322.857886 122.093941 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="344.409449" y="126.017378" transform="rotate(-0 344.409449 126.017378)">execution identity</text>
+   </g>
+   <g id="text_18">
+    <g id="patch_10">
+     <path d="M 441.546973 127.354878 
+L 476.878223 127.354878 
+L 476.878223 122.093941 
+L 441.546973 122.093941 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="459.212598" y="126.017378" transform="rotate(-0 459.212598 126.017378)">review identity</text>
+   </g>
+   <g id="text_19">
+    <g id="patch_11">
+     <path d="M 32.971518 157.118658 
+L 57.737143 157.118658 
+L 57.737143 151.85772 
+L 32.971518 151.85772 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="45.354331" y="155.781158" transform="rotate(-0 45.354331 155.781158)">read input</text>
+   </g>
+   <g id="text_20">
+    <g id="patch_12">
+     <path d="M 87.989432 175.543855 
+L 116.105057 175.543855 
+L 116.105057 170.282917 
+L 87.989432 170.282917 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="102.047244" y="174.206355" transform="rotate(-0 102.047244 174.206355)">read review</text>
+   </g>
+   <g id="text_21">
+    <g id="patch_13">
+     <path d="M 317.014841 203.890311 
+L 329.284372 203.890311 
+L 329.284372 198.629374 
+L 317.014841 198.629374 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="323.149606" y="202.552811" transform="rotate(-0 323.149606 202.552811)">write</text>
+   </g>
+   <g id="text_22">
+    <g id="patch_14">
+     <path d="M 303.789029 216.646217 
+L 325.50231 216.646217 
+L 325.50231 211.385279 
+L 303.789029 211.385279 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="314.645669" y="215.308717" transform="rotate(-0 314.645669 215.308717)">write WS</text>
+   </g>
+   <g id="text_23">
+    <g id="patch_15">
+     <path d="M 411.056887 226.567477 
+L 445.006105 226.567477 
+L 445.006105 221.306539 
+L 411.056887 221.306539 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="428.031496" y="225.229977" transform="rotate(-0 428.031496 225.229977)">evidence read</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(50.222558 304.260451)">Codex standalone 0.153.4</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(53.844823 309.211263)">root-owned / read-only</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(60.64873 314.162076)">project toolchain</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(50.789745 319.112888)">entrypoint identity frozen</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(185.451747 306.735857)">Operational CODEX_HOME / credentials</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(176.413466 311.68667)">authentication separate from immutable toolchain</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(195.589247 316.637482)">auth.json / config.toml protected</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(368.339502 306.735857)">Client / command network separation</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(358.332862 311.68667)">client connectivity may be authorized per Gate</text>
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(336.660596 316.637482)">child-command network capability remains separately constrained</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(48.743276 368.00326)">LOCAL ADAPTER BOUNDARY</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(71.567886 372.954072)">QUALIFIED</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(58.908901 377.904885)">OS | actor | filesystem</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(46.980776 382.929135)">sandbox controls demonstrated</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(204.638257 368.039978)">M4 BEHAVIORAL QUALIFICATION</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(221.769116 372.990791)">NOT ESTABLISHED</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(198.112085 377.941603)">HOLD_INFRASTRUCTURE_PREMODEL</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(216.027319 382.892416)">0 confirmed model turns</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(373.537445 368.018103)">M4R1 PROSPECTIVE REMEDIATION</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(404.608538 372.968916)">HOLD F03</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(385.711273 377.919728)">staged-terminal readiness</text>
+    <text style="font-weight: 700; font-size: 5px; font-family: 'Liberation Sans', sans-serif" transform="translate(384.048382 382.892416)">causal-cycle design finding</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="80.787402" y="435.277221" transform="rotate(-0 80.787402 435.277221)">scientific runtime = false</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="199.84252" y="435.277221" transform="rotate(-0 199.84252 435.277221)">GEE runtime = false</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="318.897638" y="435.277221" transform="rotate(-0 318.897638 435.277221)">production runtime = false</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="437.952756" y="435.277221" transform="rotate(-0 437.952756 435.277221)">M4 rerun authorized = false</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 6.8px; font-family: 'Liberation Sans', sans-serif; text-anchor: start" x="14.173228" y="14.464406" transform="rotate(-0 14.173228 14.464406)">MM local execution adapter | v1.0.6</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: end" x="496.062992" y="14.037937" transform="rotate(-0 496.062992 14.037937)">local implementation view of Figure 1 | non-normative | no runtime authorization</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 6.4px; font-family: 'Liberation Sans', sans-serif; text-anchor: start" x="14.173228" y="31.702244" transform="rotate(-0 14.173228 31.702244)">Host and virtualization boundary</text>
+   </g>
+   <g id="text_37">
+    <text style="font-weight: 700; font-size: 6.4px; font-family: 'Liberation Sans', sans-serif; text-anchor: start" x="257.952756" y="31.702244" transform="rotate(-0 257.952756 31.702244)">Actor separation</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 6.4px; font-family: 'Liberation Sans', sans-serif; text-anchor: start" x="14.173228" y="150.473898" transform="rotate(-0 14.173228 150.473898)">Controlled filesystem authority model</text>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 6.4px; font-family: 'Liberation Sans', sans-serif; text-anchor: start" x="320.314961" y="146.207929" transform="rotate(-0 320.314961 146.207929)">Sandbox and least privilege</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 6.4px; font-family: 'Liberation Sans', sans-serif; text-anchor: start" x="14.173228" y="280.867598" transform="rotate(-0 14.173228 280.867598)">Controlled toolchain, credentials and network boundary</text>
+   </g>
+   <g id="text_41">
+    <text style="font-weight: 700; font-size: 6.4px; font-family: 'Liberation Sans', sans-serif; text-anchor: start" x="14.173228" y="347.481772" transform="rotate(-0 14.173228 347.481772)">Current qualification boundary</text>
+   </g>
+   <g id="text_42">
+    <text style="font-weight: 700; font-size: 6px; font-family: 'Liberation Sans', sans-serif; text-anchor: middle" x="256.535433" y="417.961011" transform="rotate(-0 256.535433 417.961011)">QUALIFIED LOCAL ADAPTER DOES NOT AUTHORIZE PRIMARY SCIENTIFIC RUNTIME</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 5px; font-family: 'Liberation Sans', sans-serif; text-anchor: end" x="498.897638" y="458.237851" transform="rotate(-0 498.897638 458.237851)">MM-LOCAL-EXECUTION-ADAPTER-FIGURE v1.0.6</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb9528bc27f">
+   <rect x="0" y="0" width="510.23622" height="467.716535"/>
+  </clipPath>
+ </defs>
+</svg>
