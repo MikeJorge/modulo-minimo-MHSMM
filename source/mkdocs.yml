@@ -1,6 +1,6 @@
 site_name: "MM Scientific Software Development Methodology"
 site_description: "Controlled methodological derivative for the Module Minimum (MM) scientific software system"
-site_author: "Module Minimum (MM) project"
+site_author: "Michael Allim Jorge"
 docs_dir: docs
 strict: true
 nav:
@@ -19,6 +19,10 @@ markdown_extensions:
 extra_css:
   - assets/mm.css
 extra:
+  author_name: "Michael Allim Jorge"
+  principal_investigator: "Michael Allim Jorge"
+  orcid_id: "0000-0002-7288-2095"
+  orcid_url: "https://orcid.org/0000-0002-7288-2095"
   methodology_version: "1.0.1"
   architecture_figure_version: "1.0.2"
   local_execution_adapter_figure_version: "1.0.6"
